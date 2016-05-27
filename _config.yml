@@ -1,7 +1,0 @@
-paginate: 5
-paginate_path: blog/page-:num
-media_path: //media.bsn.io/img/
-baseurl: ''
-markdown: kramdown
-exclude: ['codekit-config.json','CNAME','config.rb','s3_website.yml']
-include: ['*.scss']
