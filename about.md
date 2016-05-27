@@ -1,12 +1,20 @@
 ---
 layout: page
-title: About
+title: About Pixyll
 permalink: /about/
-feature-img: "img/sample_feature_img_2.png"
+tags: about
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
+([@4lpine](https://twitter.com/4lpine)).
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
+request a feature, report a bug, or contribute. It's free, and open source
+([MIT](http://opensource.org/licenses/MIT)).
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Thanks to the following:
+
+* [BASSCSS](http://basscss.com)
+* [Jekyll](http://jekyllrb.com)
+* [Refills](http://refills.bourbon.io/)
+* [Type Scale](http://type-scale.com/)

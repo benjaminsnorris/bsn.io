@@ -1,74 +1,112 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+# Site settings
+title:       Pixyll
+email:       your_email@example.com
+author:      John Otander
+description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+baseurl:     ""
+url:         "http://pixyll.com"
+date_format: "%b %-d, %Y"
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: Type Theme
-  avatar: avatar.png
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
+# Bing services
+bing_verification:
 
-  # Header and footer text
-  header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+# Optional features
+animated:             false
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    false
+ajaxify_contact_form: false
+enable_mathjax: false
+extended_fonts: false
+enable_anchorjs: false
 
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
-  header_text_feature_image:
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname:
 
-  # Icons
-  rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "rohanchandra/type-theme"
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: "twitter"
-  wordpress:
-  youtube:
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
 
-  # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  katex: true # Enable if using math markup
+# Social icons
+github_username:
+bitbucket_username:
+stackoverflow_id:
+twitter_username:
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
 
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
+# Post sharing icons
+show_sharing_icons: false
+# Change to 'true' to enable individual icons
+share_facebook: false
+share_twitter: false
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  contact:
+    email:    'Email Address'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
+    ajax:
+      sending:  'sending..'
+      sent:     'Message sent!'
+      error:    'Error!'
+  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  og_locale: 'en_US'
 
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
 sass:
-  sass_dir: _sass
-  style: :compressed
-gems: [jekyll-paginate]
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]
