@@ -6,6 +6,4 @@ _site
 #########################################
 _media
 
-# Exclude the s3_website config #
-#################################
-s3_website.yml
+.sass-cache
