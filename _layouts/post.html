@@ -1,27 +1,47 @@
 ---
-page-title: Blog | BSN Design
-page-classes: blog post
-readyScript: var words=parseInt($('#words').html()),time=Math.ceil(words/225);$("#reading-time").html(time)
+layout: default
 ---
-{% include head.html %}
-        <section id="blog-paper">
-          <header class="page-header"><a href="{{ site.baseurl }}/" class="blog-logo" id="home">Home</a>
-            <div class="title">
-              <h1><span class="hidden">BSN Design </span><a class="link" href="{{ site.baseurl }}/blog/">Blog</a></h1>
-            </div>
-          </header>
-          <article class="main">
-            <header class="post-header">
-              <h2>{{ page.title }}</h2>
-              <p class="meta">
-                <time>{{ page.date | date_to_string }}</time>
-              </p>
-              <p class="meta">Reading Time: <span id="reading-time">0</span> minutes</p>
-              <p class="meta hide">Words: <span id="words">{{ page.content | number_of_words }}</span></p>
-            </header>
-            <div class="main">
-              {{ content }}
-            </div>
-          </article>
-        </section>
-{% include foot.html %}
+
+{% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+<div class="post-header mb2">
+  <h1>{{ page.title }}</h1>
+  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
+  {% if page.update_date %}
+    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
+  {% endif %}
+  <span class="post-meta small">
+  {% if page.minutes %}
+    {{ page.minutes }} {{ site.text.post.minute_read }}
+  {% else %}
+    {{ minutes }} {{ site.text.post.minute_read }}
+  {% endif %}
+  </span>
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+{% if site.show_sharing_icons %}
+  {% include share_buttons.html %}
+{% endif %}
+
+{% if site.show_post_footers %}
+  {% include post_footer.html %}
+{% endif %}
+
+{% if site.show_related_posts %}
+  <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
+  {% for post in site.related_posts %}
+    <div class="post ml2">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ post.title }}</h4>
+        <p class="post-summary">{{ post.summary }}</p>
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}
