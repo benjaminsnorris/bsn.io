@@ -1,26 +1,74 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://example.com" # the base hostname & protocol for your site
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Type Theme
+  avatar: avatar.png
+  gravatar: # Email MD5 hash
+  description: "A website with blog posts and pages" # used by search engines
 
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+  # Header and footer text
+  header_text: >
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
-paginate:         5
+  # Icons
+  rss: false
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "rohanchandra/type-theme"
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "twitter"
+  wordpress:
+  youtube:
 
-# Custom vars
-version:          2.1.0
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
 
-github:
-  repo:           https://github.com/poole/hyde
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: false
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate]
