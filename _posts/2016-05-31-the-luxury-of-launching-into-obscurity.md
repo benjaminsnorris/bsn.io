@@ -1,9 +1,9 @@
 ---
-layout: post
-title: The Luxury of Launching into Obscurity
-date: 2016-05-31 16:30:00
-summary: Launching without an audience is intimidating and empowering.
-categories:
+layout:         post
+title:          The Luxury of Launching into Obscurity
+date:           2016-05-31 16:30:00
+summary:        Launching without an audience is intimidating and empowering.
+categories:     musings
 ---
 
 As I was getting my blog ready, there was a large part of me that wanted to hold back until I had something meaningful to contribute. But there was another part of me that realized that at this point, it _doesn’t matter_. When I launch my blog, no one will notice. When I write a new post, I will be the only one that will care. If there are problems, or if there is something with which I am not happy, I can change it easily, and no one else will ever know.
