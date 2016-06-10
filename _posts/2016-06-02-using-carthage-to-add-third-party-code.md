@@ -11,30 +11,33 @@ In almost every project that I create, I bring in frameworks and libraries. Afte
 The advantage of this system that you have all the control of submodules, while having the ease of using Carthage to keep dependencies in sync. You can easily change the version number of the dependencies in Carthage, and then commit the update to the submodule, making it easy to work across teams.
 
 ## Pre-requisites
-- [ ] Create a workspace with your project included.
+1. Create a workspace with your project included.
 	- For help, look at [Apple’s instructions](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Creating_a_Workspace.html).
-- [ ] Set up a Cartfile with your dependencies.
+- Set up a Cartfile with your dependencies.
 	- For help, look at the [Carthage documentation](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
-- [ ] In Terminal, run the command `carthage bootstrap --no-build --use-submodules`.
+- In Terminal, run the command `carthage bootstrap --no-build --use-submodules`.
 	- Make sure that you have `carthage` installed ([documentation](https://github.com/Carthage/Carthage#installing-carthage)).
 	- This will clone or fetch all of your dependencies, and check them out as git submodules in your project
 	- *Note:* You only need to run `bootstrap` once in your project. After that, you will run `carthage update --no-build --use-submodules`.
 
 ## Bringing in a dependency
-- [ ] Find the FrameworkName.xcodeproj file for the dependency in .Carthage/Checkouts and add it to your workspace.
+1. Find the FrameworkName.xcodeproj file for the dependency in .Carthage/Checkouts and add it to your workspace.
 	- Make sure that you drag the project to the far left so that it becomes a workspace project instead of a subproject under an existing project.
-- [ ] In the General tab of your app target, add the framework to “Linked Frameworks and Libraries” by searching in the workspace.
-- [ ] The framework should show up in your Project Navigator. Drag it to a folder according to your project organization.
-- [ ] Add the same framework to “Embedded Binaries” in the General tab.
-- [ ] This will probably create a duplicate entry in “Linked Frameworks and Libraries” which you should remove.
-- [ ] Select the framework in the Project Navigator, and change the Location to “Relative to Build Products” in the File Inspector panel on the right.
-- [ ] Edit your project file (ProjectName.xcodeproj/project.pbxproj) in a text editor.
-	- [ ] In the `PBXFileReference` section, find the entry for your framework.
-	- [ ] Edit the `path` property to be simply `FrameworkName.framework`. You will probably be removing a long, absolute path reference.
-	- [ ] The `sourceTree` property should be set to `BUILT_PRODUCTS_DIR`.
-- [ ] In the Build Settings tab of your app target, find the “Framework Search Paths” option. An entry pointing to the framework in .Carthage/Checkouts has probably been added, which you should remove.
-- [ ] Build the project and make sure there are no errors.
+- In the General tab of your app target, add the framework to “Linked Frameworks and Libraries” by searching in the workspace.
+- The framework should show up in your Project Navigator. Drag it to a folder according to your project organization.
+- Add the same framework to “Embedded Binaries” in the General tab.
+- This will probably create a duplicate entry in “Linked Frameworks and Libraries” which you should remove.
+- Select the framework in the Project Navigator, and change the Location to “Relative to Build Products” in the File Inspector panel on the right.
+- Edit your project file (ProjectName.xcodeproj/project.pbxproj) in a text editor.
+	- In the `PBXFileReference` section, find the entry for your framework.
+	- Edit the `path` property to be simply `FrameworkName.framework`. You will probably be removing a long, absolute path reference.
+	- The `sourceTree` property should be set to `BUILT_PRODUCTS_DIR`.
+- In the Build Settings tab of your app target, find the “Framework Search Paths” option. An entry pointing to the framework in .Carthage/Checkouts has probably been added, which you should remove.
+- Build the project and make sure there are no errors.
 
 ## Additional information
 When someone else checks out the project, they it is not necessary to run any `carthage` commands. Instead, they will update the submodules. This can be done in Terminal, if needed, using `git submodule update --init`.
+
+## Conclusion
+It is always a challenge to find the best way to incorporate third-party code in a consistent, repeatable way that works well for individual developers as well as automated build systems. This has worked well for us, and hopefully will help you and your team as well.
 
