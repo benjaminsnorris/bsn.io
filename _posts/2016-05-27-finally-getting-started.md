@@ -1,5 +1,4 @@
 ---
-layout:         post
 title:          Finally getting started
 date:           2016-05-27 14:12:00
 summary:        After putting this off far too long, I’m finally blogging.

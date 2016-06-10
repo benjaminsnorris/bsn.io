@@ -1,5 +1,4 @@
 ---
-layout:         post
 title:          Fixing local problems with a Carthage version number
 date:           2016-06-06 09:30:00
 summary:        For those times when Carthage will not bend itself to your will.
