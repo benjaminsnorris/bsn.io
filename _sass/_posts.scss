@@ -43,6 +43,19 @@
   font-style: italic;
 }
 
+.post-meta a {
+  color: #7a7a7a;
+  text-decoration: none;
+  background-image: none;
+}
+.post-meta a:hover,
+.post-meta a:focus,
+.post-meta a:active {
+  color: $link-hover-color;
+  text-decoration: underline;
+}
+
+
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
   margin-top: 3rem;
