@@ -2,7 +2,7 @@
 layout:         post
 title:          Using Carthage to add third-party code
 date:           2016-06-02 10:30:00
-summary:        Simplify third-party dependencies using Carthage and Git submodules
+summary:        Simplify third-party dependencies using Carthage and Git submodules.
 categories:     reference
 ---
 
@@ -40,4 +40,3 @@ When someone else checks out the project, they it is not necessary to run any `c
 
 ## Conclusion
 It is always a challenge to find the best way to incorporate third-party code in a consistent, repeatable way that works well for individual developers as well as automated build systems. This has worked well for us, and hopefully will help you and your team as well.
-
