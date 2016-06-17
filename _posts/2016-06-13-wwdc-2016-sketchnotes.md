@@ -8,6 +8,8 @@ minutes:        10
 
 WWDC is here again! I was thrilled to have the chance to watch and sketchnote the main events today, and wanted to gather all of my sketchnotes together. Hope you enjoy!
 
+<a href="http://gallery.bsn.io/post/146070706797/sketchnotes-from-apples-keynote-and-state-of-the" class="button button-blue">View in gallery »</a>
+
 ![Intro]({{ site.url }}/images/sketchnotes/wwdc16/wwdc16-sketchnotes-1.JPG)
 
 ## Keynote
