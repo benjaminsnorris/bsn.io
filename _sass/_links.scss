@@ -39,6 +39,23 @@ button,
   background-image: none;
 }
 
+.button .fa {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.button .title {
+  vertical-align: 0.15rem;
+}
+
+.button.download {
+  padding-left: 0;
+}
+
+.button.download img {
+  width: 10rem;
+}
+
 .anchorjs-link {
     text-shadow: none;
     background-image: none;

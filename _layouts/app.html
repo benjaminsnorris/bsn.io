@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+<div class="post-header mb2">
+  <h1>{{ page.title }}</h1>
+  {% if page.release_date %}
+    <div class="post-meta">Released: {{ page.release_date | date: site.date_format }}</div>
+  {% else %}
+    <div class="post-meta">{{ page.date | date: site.date_format }}</div>
+  {% endif %}
+  {% if page.update_date %}
+    <div class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</div>
+  {% endif %}
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+{% if site.show_sharing_icons %}
+  {% include share_buttons.html %}
+{% endif %}
+
+{% if page.external_link or page.store_link %}
+  <div class="post-external-links">
+    {% if page.store_link %}
+        <a href="{{ page.store_link }}" class="button download" target="_blank"><img src="{{ site.baseurl }}/images/app-store-badge.svg" alt="Download {{ page.title }} on the App Store"/></a>
+    {% endif %}
+    {% if page.external_link %}
+        <a href="{{ page.external_link }}" class="button button-blue">View marketing page »</a>
+      {% endif %}
+  </div>
+{% endif %}
+
+{% if site.show_post_footers %}
+  {% include post_footer.html %}
+{% endif %}
+
+{% if site.show_related_posts %}
+  <h3 class="related-post-title">{{ site.text.app.related_apps }}</h3>
+  {% for app in site.apps %}
+    {% assign match = false %}
+    {% for category in app.categories %}
+      {% if page.categories contains category and page != app %}
+        {% assign match = true %}
+      {% endif %}
+    {% endfor %}
+    {% if match %}
+    <div class="post ml2">
+      <a href="{{ app.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ app.title }}</h4>
+        <p class="post-summary">{{ app.summary }}</p>
+      </a>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

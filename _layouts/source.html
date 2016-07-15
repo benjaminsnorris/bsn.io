@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="post-header mb2">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">Released: {{ page.release_date | date: site.date_format }}</div>
+  {% if page.update_date %}
+    <div class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</div>
+  {% endif %}
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+{% if site.show_sharing_icons %}
+  {% include share_buttons.html %}
+{% endif %}
+
+<div class="post-external-links">
+    <a href="{{ page.external_link }}" class="button button-blue"><span class="fa fa-github"></span><span class="title">View on GitHub</span></a>
+</div>
+
+{% if site.show_post_footers %}
+  {% include post_footer.html %}
+{% endif %}
+
+{% if site.show_related_posts %}
+  <h3 class="related-post-title">{{ site.text.source.related_sources }}</h3>
+  {% for source in site.sources %}
+    {% assign match = false %}
+    {% for category in source.categories %}
+      {% if page.categories contains category and page != source %}
+        {% assign match = true %}
+      {% endif %}
+    {% endfor %}
+    {% if match %}
+    <div class="post ml2">
+      <a href="{{ source.url | prepend: site.baseurl }}" class="post-link">
+        <h4 class="post-title">{{ source.title }}</h4>
+        <p class="post-summary">{{ source.summary }}</p>
+      </a>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

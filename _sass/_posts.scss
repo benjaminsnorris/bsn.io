@@ -18,6 +18,12 @@
   margin-top: 0;
   font-weight: 600;
   color: #333;
+  display: inline-block;
+}
+
+.post-link,
+.post-link:hover {
+  background-image: none;
 }
 
 .post-footer {
@@ -59,4 +65,10 @@
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
   margin-top: 3rem;
+}
+
+.post-external-links {
+  border-top: thin solid #f3f3f3;
+  margin-top: 3rem;
+  padding-top: 1rem;
 }

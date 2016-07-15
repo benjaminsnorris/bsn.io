@@ -15,6 +15,18 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: sources
+    values:
+      layout: source
+  -
+    scope:
+      path: ""
+      type: apps
+    values:
+      layout: app
 
 # Google services
 google_verification:
@@ -82,6 +94,10 @@ text:
     updated:        'Updated'
     minute_read:    'minute read'
     related_posts:  'Related Posts'
+  source:
+    related_sources: 'Other Code'
+  app:
+    related_apps:    'Other Apps'
   index:
     coming_soon: 'Coming soon...'
   contact:
@@ -109,3 +125,10 @@ gems:
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+
+collections:
+  sources:
+    output: true
+    permalink: /code/:path/
+  apps:
+    output: true

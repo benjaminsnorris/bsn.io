@@ -1,0 +1,21 @@
+---
+layout:       page
+title:        Apps
+permalink:    /apps/
+tags:         nav
+---
+
+<p>These are some of the apps that I have created or worked on.</p>
+
+<div class="posts">
+  {% assign sorted = (site.apps | sort: 'date') | reverse %}
+  {% for app in sorted %}
+    <div class="post py2">
+      <p class="post-meta h5">{{ app.date | date: site.date_format }}</p>
+      <a href="{{ app.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ app.title }}</h3></a>
+      {% if app.store_link %}
+        <span class="social-icons"><a class="fa fa-external-link" href="{{ app.store_link }}" target="_blank"></a></span>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
