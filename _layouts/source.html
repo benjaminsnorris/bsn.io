@@ -8,6 +8,13 @@ layout: default
   {% if page.update_date %}
     <div class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</div>
   {% endif %}
+  {% if page.categories.size > 0 %}
+    <div class="post-meta">
+    {% for category in page.categories %}
+      <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+    {% endfor %}
+    </div>
+  {% endif %}
 </div>
 
 <article class="post-content">
