@@ -9,24 +9,36 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <div class="post-meta">{{ page.date | date: site.date_format }}</div>
+  {% if page.release_date %}
+    <div class="post-meta">Released: {{ page.release_date | date: site.date_format }}</div>
+  {% else %}
+    <div class="post-meta">{{ page.date | date: site.date_format }}</div>
+  {% endif %}
   {% if page.update_date %}
     <div class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</div>
   {% endif %}
   {% if page.categories.size > 0 %}
     <div class="post-meta">
+      {% assign category_path = "categories" %}
+      {% if page.collection == "apps" %}
+        {% assign category_path = "apps" %}
+      {% elsif page.collection == "sources" %}
+        {% assign category_path = "code" %}
+      {% endif %}
     {% for category in page.categories %}
-      <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+      <a href="/{{ category_path }}/{{ category }}" class="category">{{ category }}</a>
     {% endfor %}
     </div>
   {% endif %}
-  <div class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }} {{ site.text.post.minute_read }}
-  {% else %}
-    {{ minutes }} {{ site.text.post.minute_read }}
+  {% if page.collection != "apps" and page.collection != "sources" %}
+    <div class="post-meta small">
+    {% if page.minutes %}
+      {{ page.minutes }} {{ site.text.post.minute_read }}
+    {% else %}
+      {{ minutes }} {{ site.text.post.minute_read }}
+    {% endif %}
+    </div>
   {% endif %}
-</div>
 </div>
 
 <article class="post-content">
@@ -37,26 +49,54 @@ layout: default
   {% include share_buttons.html %}
 {% endif %}
 
+{% if page.external_link or page.store_link %}
+  <div class="post-external-links">
+    {% if page.collection == "apps" %}
+      {% if page.store_link %}
+          <a href="{{ page.store_link }}" class="button download" target="_blank"><img src="{{ site.baseurl }}/images/app-store-badge.svg" alt="Download {{ page.title }} on the App Store"/></a>
+      {% endif %}
+      {% if page.external_link %}
+          <a href="{{ page.external_link }}" class="button button-blue">View marketing page »</a>
+      {% endif %}
+    {% elsif page.collection == "sources" %}
+      <a href="{{ page.external_link }}" class="button button-blue"><span class="fa fa-github"></span><span class="title">View on GitHub</span></a>
+    {% endif %}
+  </div>
+{% endif %}
+
 {% if site.show_post_footers %}
   {% include post_footer.html %}
 {% endif %}
 
 {% if site.show_related_posts %}
-  <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
-  {% for post in site.related_posts %}
-    {% assign match = false %}
+  {% if page.collection == "apps" %}
+    {% assign all_posts = (site.apps | sort: 'date') | reverse %}
+  {% elsif page.collection == "sources" %}
+    {% assign all_posts = (site.sources | sort: 'date') | reverse %}
+  {% else %}
+    {% assign all_posts = (site.posts | sort: 'date') | reverse %}
+  {% endif %}
+  {% assign related_ids = "|" %}
+  {% for post in all_posts %}
     {% for category in post.categories %}
-      {% if page.categories contains category %}
-        {% assign match = true %}
+      {% if page.categories contains category and page != post %}
+        {% assign related_ids  = related_ids | append: post.id | append: "|" %}
       {% endif %}
     {% endfor %}
-    {% if match %}
-    <div class="post ml2">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-summary">{{ post.summary }}</p>
-      </a>
-    </div>
-    {% endif %}
   {% endfor %}
+  {% assign related_ids = related_ids | split:'|' %}
+  {% assign related_ids = related_ids | slice: 0, 6 %}
+  {% if related_ids.size > 0 %}
+    <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
+    {% for post in all_posts %}
+    {% if related_ids contains post.id %}
+      <div class="post ml2">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <h4 class="post-title">{{ post.title }}</h4>
+          <p class="post-summary">{{ post.summary }}</p>
+        </a>
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endif %}

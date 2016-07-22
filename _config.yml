@@ -12,21 +12,21 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
   -
     scope:
       path: ""
       type: sources
     values:
-      layout: source
+      layout: post
   -
     scope:
       path: ""
       type: apps
     values:
-      layout: app
+      layout: post
 
 # Google services
 google_verification:
