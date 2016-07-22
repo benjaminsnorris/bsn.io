@@ -14,6 +14,13 @@ tags:         nav
       <p class="post-meta h5">{{ source.date | date: site.date_format }}</p>
       <a href="{{ source.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ source.title }}</h3></a>
       <span class="social-icons"><a class="fa fa-github" href="{{ source.external_link }}"></a></span>
+      {% if source.categories.size > 0 %}
+        <span class="post-meta small">
+          {% for category in source.categories %}
+            <a href="{{ category }}" class="category">{{ category }}</a>
+          {% endfor %}
+        </span>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

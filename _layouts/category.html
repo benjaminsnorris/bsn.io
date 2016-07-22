@@ -7,18 +7,27 @@ layout: default
   </header>
   <article class="post-content">
     <div class="posts">
-      {% for post in site.categories.[page.category] %}
-        <div class="post py2">
-          <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
-        </div>
+      {% if page.type == "app" %}
+        {% assign posts = (site.apps | sort: 'date') | reverse %}
+      {% elsif page.type == "source" %}
+        {% assign posts = (site.sources | sort: 'date') | reverse %}
+      {% else %}
+        {% assign posts = site.categories.[page.category] %}
+      {% endif %}
+      {% for post in posts %}
+        {% if post.categories contains page.category %}
+          <div class="post py2">
+            <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+              {% if post.summary %}
+                {{ post.summary }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
+            </p>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </article>

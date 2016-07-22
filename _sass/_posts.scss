@@ -61,6 +61,27 @@
   text-decoration: underline;
 }
 
+span.post-meta {
+  margin-left: .5rem;
+}
+
+.post-meta .category {
+    display: inline-block;
+    margin-right: .25rem;
+    background-color: #eaeaea;
+    text-shadow: none;
+    padding: .125rem .5rem;
+    border-radius: .25rem;
+    vertical-align: text-bottom;
+}
+
+.post-meta .category:hover,
+.post-meta .category:focus,
+.post-meta .category:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2087E3;
+}
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
