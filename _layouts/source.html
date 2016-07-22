@@ -34,21 +34,28 @@ layout: default
 {% endif %}
 
 {% if site.show_related_posts %}
-  <h3 class="related-post-title">{{ site.text.source.related_sources }}</h3>
-  {% for source in site.sources %}
-    {% assign match = false %}
+  {% assign all_sources = (site.sources | sort: 'date') | reverse %}
+  {% assign related_ids = "|" %}
+  {% for source in all_sources %}
     {% for category in source.categories %}
       {% if page.categories contains category and page != source %}
-        {% assign match = true %}
+        {% assign related_ids  = related_ids | append: source.id | append: "|" %}
       {% endif %}
     {% endfor %}
-    {% if match %}
-    <div class="post ml2">
-      <a href="{{ source.url | prepend: site.baseurl }}" class="post-link">
-        <h4 class="post-title">{{ source.title }}</h4>
-        <p class="post-summary">{{ source.summary }}</p>
-      </a>
-    </div>
-    {% endif %}
   {% endfor %}
+  {% assign related_ids = related_ids | split:'|' %}
+  {% assign related_ids = related_ids | slice: 0, 6 %}
+  {% if related_ids.size > 0 %}
+    <h3 class="related-post-title">{{ site.text.source.related_sources }}</h3>
+    {% for source in all_sources %}
+      {% if related_ids contains source.id %}
+        <div class="post ml2">
+          <a href="{{ source.url | prepend: site.baseurl }}" class="post-link">
+            <h4 class="post-title">{{ source.title }}</h4>
+            <p class="post-summary">{{ source.summary }}</p>
+          </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endif %}
