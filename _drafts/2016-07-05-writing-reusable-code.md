@@ -19,11 +19,25 @@ Since then, I have made a [number of libraries](/code) that I use across differe
 ### Dependency management
 For a long time, I resisted adding any dependencies to my projects. It felt much simpler to just focus on the project at hand, and build anything that was needed specific to the project. Dealing with a system such as [Cocoapods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) felt like too much overhead. Part of my reaction came from working on projects where previous developers had pulled in so many dependencies that the project became unwieldy and difficult to update and maintain. We experimented with different approaches and finally landed on using Carthage and Git submodules, which I [wrote about earlier](({% post_url 2016-06-02-using-carthage-to-add-third-party-code %})).
 
-Part of the key in managing dependencies reliably is being able to choose when to update those dependencies.
+Part of the key in managing dependencies reliably is being able to choose when to update those dependencies. If your code changes out from under you when you are not expecting it, development becomes much more difficult. Using Carthage and submodules means that I decide exactly when to update, and can choose which version of a given dependency to keep in my project. So if I need to use an older version for compatibility issues, or an experimental branch, that is easy to do.
 
-### Extra initial time
+### Extra time cost
+One of the biggest frustrations with adding dependencies is the additional time investment at the beginning of a project. Especially if something goes wrong, it can be extremely frustrating to want to just start coding, and instead have to deal with dependency problems.
 
+Again, this is one of the reasons that I have decided on the system that I currently use. I use [Tower](https://www.git-tower.com/) as a Git client, and it has made working with submodules extremely simple. If someone needs to check out the repo, they can just initialize the submodules, and they will have the entire project set up and ready to go. When starting a project, it is a simple process to set up the project, although there are a number of steps that can feel intimidating at first.
+
+### Maintenance
+One significant issue that you have to be aware of when creating open-source projects is the possibility that they will become successful. Once an open-source project starts being used by more people, invariably, there will come pull requests to manage, or issues to triage, or questions to answer. Hopefully this also comes with the benefit of having the code improved by getting more real-word usage, and contributions back to the project. But as the project creator, you have to evaluate whether the benefit will be worth the cost.
 
 ## Pros
 
-### Quicker project spinup
+### Quicker project spin up
+In practice, I have found that the time balance comes out in favor of using dependencies. I only have a few third-party libraries that I am pulling in—many of my dependencies are internal libraries that I maintain and share across my projects. Splitting that code out into libraries that I can reuse means that in each project, I can focus on just the app-specific logic. I have been able to get new projects started much faster as a result.
+
+### Increased testability
+Since I am using mainly internal libraries, this is code that I have have written anyway for each app. But since I am creating libraries from the code, by necessity, it is decoupled from app logic, and more modular, making it easier to test. This has the benefit of creating more maintainable code and spending less time down the road debugging and fixing issues.
+
+### Community contribution
+Even though many of my frameworks and libraries are only used by myself at this point, the fact that I am creating them as open-source projects means that they are available to the community. As I find interesting approaches to problems, or identify areas of boilerplate code that can easily be reused, it is a great feeling knowing that I am making it possible for others to benefit from that as well.
+
+Of course, since I am still enjoying the [luxury of obscurity]({ %post_url 2016-05-31-the-luxury-of-launching-into-obscurity %}), I do not feel the pressure of having all of my projects perfectly documented, tested, and maintained. I still plan on working toward that goal, but I know I have time. At this point, creating reusable libraries has given me great personal benefit, and I look forward to helping others as well in the future.
