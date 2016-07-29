@@ -5,4 +5,6 @@ permalink:    /about/
 tags:         nav
 ---
 
-This page will include information about BSN Design, and why I have two separate sites.
+I am Ben Norris, owner of BSN Design. My company website is [bsn.design](http://bsn.design). This website is for sharing things that I am making or learning.
+
+_![Ben Norris](/images/Norris_Ben.JPG)_
