@@ -62,14 +62,14 @@ $lighter-gray: #dedede !default;
 $off-white: #fafafa !default;
 
 // Text
-$text: $off-white;
-$darker-text: $light-gray;
-$disabled-text: $mid-light-gray;
-$nav: $mid-light-gray;
-$nav-hover: $lighter-gray;
+$text: $light-gray;
+$darker-text: $mid-light-gray;
+$disabled-text: $mid-gray;
+$nav: $mid-gray;
+$nav-hover: $light-gray;
 $hover-underline: $mid-gray;
 $title: $light-gray;
-$title-hover: $off-white;
+$title-hover: $mid-gray;
 $sub-text: $mid-light-gray;
 
 // Backgrounds
@@ -110,7 +110,7 @@ $form-field-padding-y: .5rem !default;
 $form-field-padding-x: .5rem !default;
 
 // Borders
-$border-color: $mid-gray !default;
+$border-color: $dark-gray !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 

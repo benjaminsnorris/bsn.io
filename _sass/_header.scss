@@ -10,6 +10,10 @@
   background-image: none;
 }
 
+.site-header a:hover {
+  color: $nav-hover;
+}
+
 .site-header .site-title {
   font-size: $h2;
 }
@@ -34,7 +38,6 @@
   margin-left: 1em;
 }
 
-.site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {

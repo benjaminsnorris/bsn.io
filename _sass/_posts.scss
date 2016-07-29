@@ -21,17 +21,20 @@
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: $title;
   display: inline-block;
+}
+
+.post-link {
+  color: $title;
+}
+
+.post-link:hover {
+  color: $title-hover;
 }
 
 .post-link,
 .post-link:hover {
   background-image: none;
-}
-
-.post-link:hover .post-title {
-  color: $title-hover;
 }
 
 .post-footer {
