@@ -35,7 +35,7 @@ The advantage of this system that you have all the control of submodules, while 
 9. Build the project and make sure there are no errors.
 
 ## Additional information
-When someone else checks out the project, they it is not necessary to run any `carthage` commands. Instead, they will update the submodules. This can be done in Terminal, if needed, using `git submodule update --init`.
+When someone else checks out the project, it is not necessary to run any `carthage` commands. Instead, they will update the submodules. This can be done in Terminal, if needed, using `git submodule update --init`.
 
 ## Conclusion
 It is always a challenge to find the best way to incorporate third-party code in a consistent, repeatable way that works well for individual developers as well as automated build systems. This has worked well for us, and hopefully will help you and your team as well.
