@@ -142,7 +142,7 @@ $hljs-change: #859900;
 $hljs-chunk: #666;
 
 // Footer
-$footer-border-top: thin solid #3f3f3f;
+$footer-border-top: thin solid $border-color;
 $footer-padding: $space-3;
 $footer-color: #7a7a7a;
 $footer-bg-color: #262626;
