@@ -5,7 +5,7 @@
 
 .posts .post {
   margin-bottom: 0.75em;
-  border-bottom: thin solid #f3f3f3;
+  border-bottom: thin solid #3f3f3f;
 }
 
 .posts .post:last-child {
@@ -14,16 +14,24 @@
   padding-bottom: 0;
 }
 
+.post-header {
+  color: #eaeaea;
+}
+
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: #333;
+  color: #ccc;
   display: inline-block;
 }
 
 .post-link,
 .post-link:hover {
   background-image: none;
+}
+
+.post-link:hover .post-title {
+  color: #fafafa;
 }
 
 .post-footer {
@@ -68,7 +76,7 @@ span.post-meta {
 .post-meta .category {
     display: inline-block;
     margin-right: .25rem;
-    background-color: #eaeaea;
+    background-color: #333;
     text-shadow: none;
     padding: .125rem .5rem;
     border-radius: .25rem;
@@ -84,7 +92,7 @@ span.post-meta {
 }
 
 .related-post-title {
-  border-bottom: thin solid #f3f3f3;
+  border-bottom: thin solid #666;
   margin-top: 3rem;
 }
 
