@@ -43,18 +43,47 @@ $green: #00ab37 !default;
 $dark-green: #009f06 !default;
 $light-pink: #ffdddd !default;
 $light-green: #ddffdd !default;
-$dark-gray: #333 !default;
-$mid-gray: #777 !default;
-$light-gray: #ccc !default;
-$lighter-gray: #eee !default;
+// $dark-gray: #333 !default;
+// $mid-gray: #777 !default;
+// $light-gray: #ccc !default;
+// $lighter-gray: #eee !default;
 $darken-1: rgba(#000,.0625) !default;
 $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;
 $darken-4: rgba(#000,.5) !default;
 
+$black: #1a1a1a !default;
+$darker-gray: #242424 !default;
+$dark-gray: #333 !default;
+$mid-gray: #666 !default;
+$mid-light-gray: #999 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #dedede !default;
+$off-white: #fafafa !default;
+
+// Text
+$text: $off-white;
+$darker-text: $light-gray;
+$disabled-text: $mid-light-gray;
+$nav: $mid-light-gray;
+$nav-hover: $lighter-gray;
+$hover-underline: $mid-gray;
+$title: $light-gray;
+$title-hover: $off-white;
+$sub-text: $mid-light-gray;
+
+// Backgrounds
+$main-background: $black;
+$footer-background: $darker-gray;
+$form-field-background: $mid-gray;
+$disabled-field-background: $dark-gray;
+$category-backgroud: $dark-gray;
+
 // Links
 $link-color: #98B7F1;
 $link-hover-color: darken($link-color, 20%);
+$button-blue: $blue;
+$button-blue-hover: darken($button-blue, 15%);
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
@@ -81,7 +110,7 @@ $form-field-padding-y: .5rem !default;
 $form-field-padding-x: .5rem !default;
 
 // Borders
-$border-color: $dark-gray !default;
+$border-color: $mid-gray !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 
@@ -93,7 +122,7 @@ $form-field-padding-x: .5rem;
 
 // Code
 $pre-border-radius: 0;
-$pre-background-color: #333;
+$pre-background-color: $darker-gray;
 $hljs-comment: #586e75;
 $hljs-keyword: #859900;
 $hljs-name: #268bd2;

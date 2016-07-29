@@ -50,8 +50,8 @@ textarea {
 }
 
 .field-light {
-  background-color: #666;
-  color: #fafafa;
+  background-color: $form-field-background;
+  color: $text;
   transition: box-shadow .2s ease;
   border-style: solid;
   border-width: $border-width;
@@ -66,12 +66,12 @@ textarea {
 }
 
 .field-light:disabled {
-  color: $mid-gray;
-  background-color: $darken-2;
+  color: $disabled-text;
+  background-color: $disabled-field-background;
 }
 
 .field-light:read-only:not(select) {
-  background-color: $darken-2;
+  background-color: $disabled-field-background;
 }
 
 .field-light:invalid {

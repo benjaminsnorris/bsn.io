@@ -1,6 +1,6 @@
 .button-blue {
   color: white;
-  background-color: $blue;
+  background-color: $button-blue;
   border-radius: $border-radius;
   border: none;
   transition-duration: .1s;
@@ -9,7 +9,7 @@
 }
 
 .button-blue:hover {
-  background-color: darken($blue, 15%)
+  background-color: $button-blue-hover;
 }
 
 .button-blue:active,
