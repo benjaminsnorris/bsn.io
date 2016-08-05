@@ -6,13 +6,9 @@
 }
 
 .pagination a, .pagination .disabled {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background: #fafafa;
+  background: $category-background;
   border-radius: 0.1875em;
-  border: 1px solid #f3f3f3;
-  color: #333333;
+  color: $sub-text;
   padding: 1em 1.5em;
 }
 
@@ -20,13 +16,11 @@
   opacity: 0.5;
 }
 
-.pagination a:hover, .pagination a:focus {
-  background: white;
-  color: #477dca;
-}
-
+.pagination a:hover,
+.pagination a:focus,
 .pagination a:active {
-  background: #f7f7f7;
+  background: $button-blue;
+  color: $text;
 }
 
 .pagination .button {
@@ -36,13 +30,11 @@
 }
 
 .button-disabled {
-  opacity: 0.55;
-  background-color: #999;
+  opacity: 0.5;
 }
 
 .button-disabled:hover,
 .button-disabled:active,
 .button-disabled:focus {
   cursor: not-allowed;
-  background-color: #999;
 }
