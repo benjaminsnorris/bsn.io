@@ -6,7 +6,7 @@ categories:     code reference
 ---
 
 ## The problem
-One of the most annoying interactions with any app or service is logging in. None of us like having to remember usernames and passwords, and often they are difficult to type in. Even if they are easy, it is never what you actually want to do. You are accessing an app or service in order to accomplish a task, and logging in is a barrier to success. However, none of us want to feel like our sensitive information is not secure, so logging in feels like a necessary evil.
+One of the most annoying interactions with any app or service is logging in. None of us likes having to remember usernames and passwords, and often they are difficult to type in. Even if they are easy, it is never what you actually want to do. You are accessing an app or service in order to accomplish a task, and logging in is a barrier to success. However, none of us want to feel like our sensitive information is not secure, so logging in is something of a necessary evil.
 
 ## The solution
 One thing that you can do as a developer is to make this experience as simple and painless as possible. One option, which I plan to discuss in the future, is to integrate with [1Password](https://1password.com/). This is a popular password management app, and integration is quite simple.
@@ -61,7 +61,7 @@ Since we are focusing on retrieving passwords, and not saving them from the app,
 
 
 ### Code
-There are many approaches to retrieving the shared password. The method I have chosen is to attempt to retrieve the shared password when the user taps on the username or password field in the login form. That way, it is not as jarring for the user when getting to the form, but it is still helpful.
+There are many approaches to retrieving the shared password. The method I have chosen is to make the call to retrieve the shared password when the user taps on the username or password field in the login form. That way, it is not as jarring for the user when first navigating to the form, but it is still helpful at the moment the user wants to take action.
 
 The actual code for retrieving the credentials is fairly simple. Here is an example with a completion closure that returns an optional username and password.
 
@@ -86,7 +86,8 @@ func requestSharedPassword(completion: (username: String?, password: String?) ->
         completion(username: nil, password: nil)
         return
       }
-      guard let username = credential[String(kSecAttrAccount)] as? String, password = credential[String(kSecSharedPassword)] as? String else {
+      guard let username = credential[String(kSecAttrAccount)] as? String,
+                password = credential[String(kSecSharedPassword)] as? String else {
         completion(username: nil, password: nil)
         return
       }
@@ -110,3 +111,7 @@ func textFieldDidBeginEditing(textField: UITextField) {
 Finally, with the code in place, you can run the app again. When the user taps in the username or password field, call your `requestSharedPassword` function, and if everything is set up properly, you will see something like this example from an app I am currently working on:
 
 ![Retrieving shared web credentials](/images/posts/shared-credentials.png)
+
+
+## Summary
+And that is it! These steps really are simple and straightforward, but the effect on the user experience of your app is tremendous.
