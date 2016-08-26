@@ -42,9 +42,9 @@ In order for the association to work, you have to upload a simple JSON file to y
 }
 ```
 
-Inside the `apps` array, you should list all of the bundle identifiers for apps that should be able to share passwords from this site. The prefix to the bundle identifier is the Apple ID for your app from iTunes Connect.
+Inside the `apps` array, you should list all of the bundle identifiers for apps that should be able to share passwords from this site. The prefix to the bundle identifier is usually your Team ID. To be sure, pull up the app in [developer.apple.com](https://developer.apple.com/account/ios/identifier/bundle) and copy the prefix from the App ID information.
 
-![App ID](/images/posts/app-identifier.png)
+![App Prefix](/images/posts/app-prefix.png)
 
 
 ### Safari password
