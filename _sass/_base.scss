@@ -27,6 +27,13 @@ em img {
   margin-left: 0;
 }
 
+img + em {
+  font-size: .8em;
+  color: $darker-text;
+  text-align: center;
+  display: inherit;
+}
+
 body {
           box-sizing: border-box;
      -moz-box-sizing: border-box;
