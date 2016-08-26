@@ -5,7 +5,7 @@ summary:        Keep working on your production-ready apps, even while running t
 categories:     code reference
 ---
 
-Like many developers, I was anxious to install iOS 10 on some of my devices in order to test new functionality. This summer, I went so far as to install iOS 10 beta on my primary iPhone, iPad, and watchOS 3 beta on my Apple Watch. I have had remarkably few issues, but one of the major problems was that I still needed to work on apps that needed to be shipped before iOS 10 came out.
+Like many developers, I was anxious to install iOS 10 on my devices. This summer, I went all in and installed iOS 10 beta on my primary iPhone, iPad, as well as watchOS 3 beta on my Apple Watch. I have had remarkably few issues, but one of the major problems was installing apps that I still needed to work on that needed to be shipped before iOS 10 came out.
 
 
 ## The problem
@@ -13,7 +13,7 @@ By default, you cannot install an app from Xcode 7 on a device running iOS 10. Y
 
 ![Xcode 7 iOS 10 error](/images/posts/xcode7-error-ios10.png)
 
-The problem is that Xcode 7 does not have support for iOS 10, and is not able to understand the operating system enough to install to devices with that operating system. Using Terminal, you can easily see which operating systems Xcode is able to support.
+The problem is that Xcode 7 does not have support for iOS 10. Using Terminal, you can easily see which operating systems Xcode is able to support.
 
 ```
 $ cd /Applications/Xcode.app/Content/Developer/Platforms/iPhoneOS.platform/DeviceSupport
@@ -24,13 +24,13 @@ $ ls
 
 
 ## The solution
-In order to have Xcode 7 install on your device running iOS 10, you first need to make sure that Xcode 8 can do the same. Download the beta, and open a project with your device connected. Typically, you will need to wait for the symbol files to install, and then you should be able to install. In some cases, restarting your device is necessary, or even resetting the network settings (`Settings -> General -> Reset -> Reset Network Settings`).
+In order for Xcode 7 to install apps on your device running iOS 10, you first need to make sure that it works with Xcode 8. Download the beta, and open a project with your device connected. Typically, you will need to wait for the symbol files to install, and then you should be able to install. In some cases, restarting your device is necessary, or even resetting the network settings (`Settings -> General -> Reset -> Reset Network Settings`).
 
-Once that it working, you can look in the Xcode beta device support folder to find iOS support.
+Once that it working, you can look in the Xcode beta device support folder to find iOS 10 support.
 
 ![Xcode beta device support](/images/posts/xcode-beta-device-support.png)
 
-There are a couple options to give Xcode 7 the information that it needs. You could copy over the folder containing 10.0 support, but the simplest option is to create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) using the `ln` command in Terminal ([documentation](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/ln.1.html)). As you type this out in Terminal, be sure to use `Tab` to help autocomplete the directory names in order to avoid typos.
+There are a couple options to give Xcode 7 the information that it needs. You could copy over the folder containing 10.0 support, but the simplest option is to create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) using the `ln` command in Terminal ([documentation](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/ln.1.html)). As you type this out in Terminal, be sure to use `Tab` to help autocomplete the directory names in order to avoid typos. And naturally, if either Xcode app is in a different place, or the exact version of iOS 10 is different, you will make adjustments for your environment.
 
 ```
 $ ln -s
