@@ -3,11 +3,12 @@ title:          Handling live text reload elegantly
 date:           2016-08-31 13:00:00
 summary:        Easy steps to support concurrent editing without losing cursor position or text selection in UITextView
 categories:     code reference
+minutes:        10
 ---
 
-In my current project at my day job, we are using [Firebase](https://firebase.google.com) and [ReSwift](https://github.com/ReSwift/ReSwift). I hope to write more about this powerful combination soon. One of the major advantages is that it allows us to easily support live reloading of concurrent editing. However, I ran into a problem in long-form text editing. It was impressive to see the text update while someone else edited the same data, but if you were also trying to type, it would get extremely frustrating. With every reload, your cursor would jump to the end of the text, making it nearly impossible to keep working on your thought.
+In my current project at my day job, we are using [Firebase](https://firebase.google.com) and [ReSwift](https://github.com/ReSwift/ReSwift). I plan to write more about this powerful combination soon. One of the major advantages is that it allows us to easily support live reloading of concurrent editing. However, I ran into a problem in long-form text editing. It was impressive to see the text update while someone else edited the same data, but if you were also trying to type, it would get extremely frustrating. With every reload, your cursor would jump to the end of the text, making it nearly impossible to keep working.
 
-One of my favorite podcasts, [Runtime](https://spec.fm/podcasts/runtime), recently mentioned working on diffing text. I reached out to [Sam Soffes](https://twitter.com/soffes), who pointed me to a simple library he created for this, [diff](https://github.com/soffes/diff).
+One of my favorite podcasts, [Runtime](https://spec.fm/podcasts/runtime), recently mentioned approaches to diffing text. I reached out to [Sam Soffes](https://twitter.com/soffes), who pointed me to a simple library he created for this, [diff](https://github.com/soffes/diff).
 
 Using that library, I was ready to tackle preserving the cursor position and text selection when the underlying text changed. In the hopes that others can benefit from or improve this work, here is the code that I am using:
 
