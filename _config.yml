@@ -123,6 +123,7 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 

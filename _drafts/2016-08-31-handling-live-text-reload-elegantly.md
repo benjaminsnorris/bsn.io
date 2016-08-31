@@ -47,4 +47,6 @@ private func moveCursorRelativeToBeginning(with offset: Int, rangeLength: Int = 
 }
 ```
 
-This is even more useful when combined with the automated tests that ensure that it is working properly. Rather than including all the code here for that, I made a [gist](https://gist.github.com/benjaminsnorris/710d22ef066ae249156f7f959be7debe) with the details.
+This is even more useful when combined with the automated tests that ensure that it is working properly. Here is a gist with all of the tests:
+
+{% gist benjaminsnorris/710d22ef066ae249156f7f959be7debe TextEditingSpec.swift %}
