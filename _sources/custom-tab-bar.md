@@ -3,7 +3,7 @@ collection:     sources
 title:          CustomTabBar
 date:           2016-07-15
 release_date:   2016-03-01
-update_date:    2016-07-15
+update_date:    2016-08-23
 external_link:  https://github.com/benjaminsnorris/CustomTabBar
 categories:     personal
 ---

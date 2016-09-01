@@ -3,7 +3,7 @@ collection:     sources
 title:          AvatarView
 date:           2016-06-23
 release_date:   2016-06-01
-update_date:    2016-06-23
+update_date:    2016-07-21
 external_link:  https://github.com/benjaminsnorris/AvatarView
 categories:     personal
 ---
