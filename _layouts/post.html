@@ -87,7 +87,15 @@ layout: default
   {% assign related_ids = related_ids | split:'|' %}
   {% assign related_ids = related_ids | slice: 0, 6 %}
   {% if related_ids.size > 0 %}
-    <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
+    <h3 class="related-post-title">
+      {% if page.collection == "apps" %}
+        {{ site.text.app.related_apps }}
+      {% elsif page.collection == "sources" %}
+        {{ site.text.source.related_sources }}
+      {% else %}
+        {{ site.text.post.related_posts }}
+      {% endif %}
+    </h3>
     {% for post in all_posts %}
     {% if related_ids contains post.id %}
       <div class="post ml2">
