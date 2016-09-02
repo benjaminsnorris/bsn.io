@@ -1,6 +1,7 @@
 ---
 title:          Handling live text reload elegantly
 date:           2016-08-31 13:00:00
+update_date:    2016-09-02 06:20:00
 summary:        Easy steps to support concurrent editing without losing cursor position or text selection in UITextView
 categories:     code reference
 ---
@@ -341,3 +342,5 @@ private extension TextEditingSpec {
 ```
 
 And in case it is easier to consume, I created a [Gist](https://gist.github.com/benjaminsnorris/710d22ef066ae249156f7f959be7debe) with all of the code.
+
+*Edit: Since writing this, I decided to pull all of this code into a simple library: [TextMagic](https://github.com/benjaminsnorris/TextMagic).*
