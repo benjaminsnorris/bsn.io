@@ -5,6 +5,7 @@ date:           2016-03-10
 release_date:   2016-02-22
 update_date:    2016-03-10
 external_link:  https://github.com/benjaminsnorris/LoadingBanner
+repo_path:      benjaminsnorris/LoadingBanner
 categories:     personal
 ---
 

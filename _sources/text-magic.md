@@ -5,6 +5,7 @@ date:           2016-09-01
 release_date:   2016-09-01
 update_date:    2016-09-01
 external_link:  https://github.com/benjaminsnorris/TextMagic
+repo_path:      benjaminsnorris/TextMagic
 categories:     personal
 ---
 

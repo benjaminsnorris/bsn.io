@@ -5,6 +5,7 @@ date:           2016-08-03
 release_date:   2016-08-03
 update_date:    2016-08-19
 external_link:  https://github.com/benjaminsnorris/SharedPasswords
+repo_path:      benjaminsnorris/SharedPasswords
 categories:     personal
 ---
 

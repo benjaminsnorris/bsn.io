@@ -41,6 +41,14 @@ layout: default
   {% endif %}
 </div>
 
+{% if page.collection == "sources" and page.repo_path %}
+  <div class="badges">
+    <a href="https://travis-ci.org/{{ page.repo_path }}"><img src="https://img.shields.io/travis/{{ page.repo_path }}/master.svg" alt="Build status"></a>
+    <a href="https://codecov.io/gh/{{ page.repo_path }}"><img src="https://img.shields.io/codecov/c/github/{{ page.repo_path }}/master.svg" alt="Codecov status"></a>
+    <a href="https://github.com/{{ page.repo_path }}/releases"><img src="https://img.shields.io/github/release/{{ page.repo_path }}.svg" alt="Build status"></a>
+  </div>
+{% endif %}
+
 <article class="post-content">
   {{ content }}
 </article>
