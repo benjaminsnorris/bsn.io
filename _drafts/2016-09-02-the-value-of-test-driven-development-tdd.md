@@ -18,18 +18,18 @@ I wrote earlier this week about [handling live text reload elegantly]({% post_ur
 1. ⌨️ Write failing tests for all the scenarios I could think of
 1. 🖥 Implement the logic for text selection
 1. 😒 Run the tests and realize I had broken cursor position support
-1. 😅 Repeat steps 7 and 8 until everything passed
+1. 😅 Repeat previous two steps until everything passed
 1. 🎉 Write an exultant blog post
 
 ## The realization
-After I was done, I realized what a difference experience it was to write the code before the tests instead of vice versa. When the code came first, my tests just verified my code. I had already thought through all the scenarios I thought I needed to support, and had coded them up, so I just had to make sure that they worked as I intended.
+After I was done, it hit me how different it was to write the code before the tests instead of vice versa. When the code came first, my tests just verified my code. I had come up with all the scenarios I thought I needed to support, and had coded them, so I just made sure that they worked as I intended.
 
-However, when I wrote the tests first, it was a very different mental exercise. I was not worried about how I was going to implement the scenarios I thought of—I was just focused on coming up with all the possible scenarios I could imagine. Not only did I think of many different cases for text selection, but I realized that I had omitted a number of cases for cursor position as well.
+However, when I wrote the tests first, it was a completely different mental exercise. I was not worried about how I was going to implement the different scenarios—I was just focused on thinking of all possible scenarios. Not only did I think of many different cases for text selection, but I realized that I had omitted a number of cases for cursor position as well.
 
 ## The takeaway
 My adherence to [TDD](https://en.wikipedia.org/wiki/Test-driven_development) has ebbed and flowed over time. It is easy to want to jump straight into writing the code and seeing something work in the simulator. But taking the time at the beginning to consider the desired behavior, and writing tests for that behavior makes for better code and fewer rewrites and regressions.
 
-Sometimes, it can feel impossible to start with tests. Your tests will not compile if the objects they are testing do not exist yet. One approach that has worked well for me is to start by writing description test function names, and then move on to writing the rest of everything. The process looks something like this:
+Sometimes, it can feel impossible to start with tests. Your tests will not compile if the objects they are testing do not exist yet. One approach that has worked well for me is to start by writing descriptive function names for tests, and then moving on to writing the rest of everything. The process looks something like this:
 
 1. Create a test case class and write empty test functions
 1. Create objects with properties and stubbed functions
@@ -40,6 +40,6 @@ Sometimes, it can feel impossible to start with tests. Your tests will not compi
 One of the most exciting aspects to programming is how much you learn while you are working through something. Invariably, you will have to make changes to the tests as you think through the implementation details. The trick is to make sure that your tests remain focused on the behavior, and not the actual implementation details. That way, if you refactor the implementation, your tests can still verify that the behavior remains intact.
 
 ## The conclusion
-A major benefit to using this approach is that it helps you write more reusable code, which has been a [focus of mine]({% post_url 2016-07-05-writing-reusable-code %}) lately. You still need to learn about good design patterns and best practices. But starting with your tests means that you are exercising the visible API from the beginning, and that will help you think through it as you build it.
+A major benefit to using this approach is that it helps you write more reusable code, which has been a [focus of mine]({% post_url 2016-07-05-writing-reusable-code %}) lately. You still need to learn about good design patterns and best practices. But starting with your tests means that you are exercising the API from the beginning, and that will help you think through having a good API as you build it.
 
 Part of my purpose in writing this post is to help myself recommit to TDD in all of my projects. It is too easy to get lazy and skip the tests altogether. That is part of why I have put build, coverage and version badges on all of my [open-source project pages](/code) on this site. I am hoping that the shame of not having tests and builds and coverage will help motivate me to get this done quickly. My future self will thank me later.
