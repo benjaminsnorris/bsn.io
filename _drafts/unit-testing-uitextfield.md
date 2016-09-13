@@ -1,6 +1,6 @@
 ---
 title:          Unit testing UITextField and UITextView
-date:           
+date:           2016-09-23 09:00:00
 summary:        The challenges of writing tests
 categories:     code reference testing
 ---
