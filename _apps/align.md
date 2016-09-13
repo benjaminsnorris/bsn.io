@@ -22,6 +22,7 @@ As the sole iOS developer, it was naturally my responsibility to build the iOS a
 Due to my previous experience as a UX Designer, I often work closely with our product manager and product designer to help refine the user experience of the app. Usually my main focus in this regard is to help make sure that our app is a good platform citizen, while still retaining a unique and distinctive personality.
 
 ## Special problems
+
 ### Data flow
 One of the exciting challenges that we tackled with Align was the flow of data. With our decision to use Firebase, we had the opportunity to leverage socket connections to get blazing fast updates of our data. In order to take advantage of this better, I used [ReSwift](https://github.com/ReSwift/ReSwift) to manage the state of the app. This has allowed to support features such as real-time collaboration, so that managers and team members can work together in preparing agendas.
 
