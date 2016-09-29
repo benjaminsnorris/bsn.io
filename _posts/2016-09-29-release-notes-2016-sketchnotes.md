@@ -12,38 +12,38 @@ minutes:        15
 
 ![Release Notes 01](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-01.jpg)
 
-![Release Notes 02](http://bsn.io/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-02.JPG)
+![Release Notes 02](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-02.jpg)
 _Cristina Warren: It will be fine...probably (Part I)_
 
-![Release Notes 03](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-03.JPG)
+![Release Notes 03](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-03.jpg)
 _Cristina Warren: It will be fine...probably (Part II)_
 
-![Release Notes 04](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-04.JPG)
+![Release Notes 04](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-04.jpg)
 _Greg Pierce: Navigating indie life_
 
-![Release Notes 05](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-05.JPG)
+![Release Notes 05](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-05.jpg)
 _David Sparks: Legal advice for developers_
 
-![Release Notes 06](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-06.JPG)
+![Release Notes 06](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-06.jpg)
 _App Camp for Girls: [Donate](https://releasenotes.tv/appcamp4girls)_
 
-![Release Notes 07](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-07.JPG)
+![Release Notes 07](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-07.jpg)
 _Matthew Bischoff: Write your way out_
 
-![Release Notes 08](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-08.JPG)
+![Release Notes 08](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-08.jpg)
 _Ariel Michaeli: Is your app ready to make money?_
 
-![Release Notes 09](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-09.JPG)
+![Release Notes 09](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-09.jpg)
 _Sarah Hatter: How to improve at support as a developer_
 
-![Release Notes 10](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-10.JPG)
+![Release Notes 10](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-10.jpg)
 _Jaimee Newberry: The art of the sell_
 
-![Release Notes 11](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-11.JPG)
+![Release Notes 11](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-11.jpg)
 _Litha Soyizwapi: A long walk to app development_
 
-![Release Notes 12](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-12.JPG)
+![Release Notes 12](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-12.jpg)
 _Rich Siegel: Better marketing through cupcakes_
 
-![Release Notes 13](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-13.JPG)
+![Release Notes 13](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-13.jpg)
 _Stephen Hackett: Myths and adjustments for indie life_
