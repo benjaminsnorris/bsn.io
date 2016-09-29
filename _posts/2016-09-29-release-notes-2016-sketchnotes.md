@@ -10,9 +10,9 @@ minutes:        15
 
 <a href="http://gallery.bsn.io/post/151114942822/sketchnotes-from-the-release-notes-2016-conference" class="button button-blue">View in gallery »</a>
 
-![Release Notes 01](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-01.JPG)
+![Release Notes 01](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-01.jpg)
 
-![Release Notes 02](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-02.JPG)
+![Release Notes 02](http://bsn.io/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-02.JPG)
 _Cristina Warren: It will be fine...probably (Part I)_
 
 ![Release Notes 03](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-03.JPG)
