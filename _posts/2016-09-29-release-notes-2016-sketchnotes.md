@@ -10,6 +10,8 @@ minutes:        15
 
 <a href="http://gallery.bsn.io/post/151114942822/sketchnotes-from-the-release-notes-2016-conference" class="button button-blue">View in gallery »</a>
 
+[PDF of entire collection](/images/sketchnotes/release-notes-2016/Release-Notes-2016-Sketchnotes.pdf)
+
 ![Release Notes 01](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-01.jpg)
 
 ![Release Notes 02](/images/sketchnotes/release-notes-2016/release-notes-2016-sketchnote-02.jpg)
