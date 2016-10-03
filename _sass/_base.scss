@@ -34,6 +34,10 @@ img + em {
   display: inherit;
 }
 
+img.small {
+  max-width: 20rem;
+}
+
 body {
           box-sizing: border-box;
      -moz-box-sizing: border-box;

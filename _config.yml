@@ -5,7 +5,8 @@ author:      Ben Norris
 description: "Content produced by BSN Design, a one-man-band creating iOS apps."
 baseurl:     ""
 url:         "http://bsn.io"
-date_format: "%b %-d, %Y"
+date_format: "%-d %b %Y"
+date_time:   "%-d %b %Y, %I:%M %p"
 
 # Defaults
 defaults:

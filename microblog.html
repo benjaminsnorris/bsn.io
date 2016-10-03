@@ -1,0 +1,32 @@
+---
+layout:       page
+title:        Microblog
+permalink:    /microblog/
+tags:         nav
+---
+<div class="post">
+  <article class="post-content">
+    <div class="posts">
+      {% assign posts = site.posts %}
+      {% assign related_ids = "|" %}
+      {% for post in posts %}
+        {% if post.categories contains "microblog" %}
+          {% assign related_ids  = related_ids | append: post.id | append: "|" %}
+        {% endif %}
+      {% endfor %}
+      {% assign related_ids = related_ids | split:'|' %}
+      {% assign related_ids = related_ids | slice: 0, 11 %}
+      {% for post in posts %}
+        {% if related_ids contains post.id %}
+          <div class="post py2">
+            <p class="post-title">{{ post.content }}</p>
+            {% if post.image %}
+              <img src="/images/microblog/{{ post.image }}" class="small">
+            {% endif %}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p class="post-meta h5">{{ post.date | date: site.date_time }}</p></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </article>
+</div>

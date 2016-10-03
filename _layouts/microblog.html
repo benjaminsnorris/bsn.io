@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article class="post-content">
+  {{ content }}
+  {% if page.image %}
+    <img src="/images/microblog/{{ page.image }}">
+  {% endif %}
+  <div class="post-meta">{{ page.date | date: site.date_time }}</div>
+</article>
