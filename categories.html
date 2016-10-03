@@ -27,7 +27,13 @@ tags: categories
 <div class="posts">
   {% for category in categories %}
     <div class="post py2">
-      <a href="{{ site.baseurl }}/categories/{{ category }}" class="post-link"><h3 class="post-title">{{ category }}</h3></a>
+			<a href=
+			{% if category == 'microblog' %}
+				"/microblog"
+			{% else %}
+      	"/categories/{{ category }}"
+			{% endif %}
+			 class="post-link"><h3 class="post-title">{{ category }}</h3></a>
 			<p class="post-meta h5">{{ site.categories.[category].size }} posts</p>
     </div>
   {% endfor %}
