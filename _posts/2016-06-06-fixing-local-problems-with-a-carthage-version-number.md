@@ -1,6 +1,7 @@
 ---
 title:          Fixing local problems with a Carthage version number
 date:           2016-06-06 09:30:00
+update_date:    2016-10-04 12:48:00-06:00
 summary:        For those times when Carthage will not bend itself to your will.
 categories:     reference
 ---
@@ -16,6 +17,7 @@ The problem is that when you update a framework via a Carthage dependency, a loc
   - `rm -rf FrameworkName/`
 3. Back in your project directory, update again from Carthage.
   - `carthage update --no-build --use-submodules`
+  - _Edit: `carthage checkout` works better for this. Thanks [Tim Shadel](https://twitter.com/timshadel)!_
 
 ## Summary
 Your framework will download from GitHub at whatever version number you have specified, and you should be set. This is mostly a reference for myself for the next time that I need to remember how to do this, but hopefully it can help you as well.
