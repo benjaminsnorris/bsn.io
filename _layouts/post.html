@@ -23,7 +23,7 @@ layout: default
       {% if page.collection == "apps" %}
         {% assign category_path = "apps" %}
       {% elsif page.collection == "sources" %}
-        {% assign category_path = "code" %}
+        {% assign category_path = "libraries" %}
       {% endif %}
     {% for category in page.categories %}
       <a href="/{{ category_path }}/{{ category }}" class="category">{{ category }}</a>

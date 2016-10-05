@@ -96,7 +96,7 @@ text:
     minute_read:    'minute read'
     related_posts:  'Related Posts'
   source:
-    related_sources: 'Other Code'
+    related_sources: 'Other Libraries'
   app:
     related_apps:    'Other Apps'
   index:
@@ -131,6 +131,6 @@ exclude: [vendor]
 collections:
   sources:
     output: true
-    permalink: /code/:path/
+    permalink: /libraries/:path/
   apps:
     output: true
