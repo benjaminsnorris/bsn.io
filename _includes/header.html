@@ -4,6 +4,11 @@
       <a href="/" class="site-title">{{ site.title }}</a>
       <nav class="site-nav">
         {% include navigation.html %}
+        {% for page in site.pages %}
+            {% if page.tags contains "contact" %}
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            {% endif %}
+        {% endfor %}
       </nav>
       <div class="clearfix"></div>
       {% if site.show_social_icons %}
