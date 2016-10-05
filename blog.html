@@ -1,0 +1,43 @@
+---
+layout:       page
+title:        Blog
+permalink:    /blog/
+tags:         writing
+---
+<div class="post">
+  <article class="post-content">
+    <div class="posts">
+      {% assign posts = site.posts %}
+      {% assign related_ids = "|" %}
+      {% for post in posts %}
+        {% unless post.categories contains "microblog" %}
+          {% assign related_ids  = related_ids | append: post.id | append: "|" %}
+        {% endunless %}
+      {% endfor %}
+      {% assign related_ids = related_ids | split:'|' %}
+      {% assign related_ids = related_ids | slice: 0, 11 %}
+      {% for post in posts %}
+        {% if related_ids contains post.id %}
+          <div class="post py3">
+            <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+              {% if post.summary %}
+                {{ post.summary }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
+            </p>
+            {% if post.categories.size > 0 %}
+            <div class="post-meta">
+              {% for category in post.categories %}
+              <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </article>
+</div>
