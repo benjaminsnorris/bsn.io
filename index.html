@@ -8,11 +8,8 @@ layout:       default
     <div class="posts">
       {% for post in paginator.posts %}
         {% if post.categories contains "microblog" %}
-          <div class="post py2">
+          <div class="post py2 microblog">
             <p class="post-title">{{ post.content }}</p>
-            {% if post.image %}
-              <img src="/images/microblog/{{ post.image }}" class="small">
-            {% endif %}
             <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p class="post-meta h5">{{ post.date | date: site.date_time }}</p></a>
           </div>
         {% else %}
