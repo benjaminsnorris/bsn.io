@@ -6,7 +6,7 @@ categories:     sketchnotes ldsconf
 minutes:        
 ---
 
-I had a wonderful time sketchnoting a talk a day for my personal studies from the [Oct 2016 General Conference](). Included here are links to my sketchnotes from each of the sessions, or a PDF of all of the sketchnotes. I hope it is as uplifting and inspiring for you as it has been for me.
+I had a wonderful time sketchnoting a talk a day for my personal studies from the [Oct 2016 General Conference](https://www.lds.org/church/events/october-2016-general-conference). Included here are links to my sketchnotes from each of the sessions, or a PDF of all of the sketchnotes. I hope it is as uplifting and inspiring for you as it has been for me.
 
 [PDF of entire collection (18 MB)](/images/sketchnotes/general-conference-oct-2016/oct-2016-general-conference-sketchnotes.pdf)
 
