@@ -26,6 +26,7 @@ layout: null
           <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
           <content>{{ post.content | truncate: 140 | xml_escape }}</content>
+          <category>Microblog</category>
         </item>
       {% endif %}
     {% endfor %}
