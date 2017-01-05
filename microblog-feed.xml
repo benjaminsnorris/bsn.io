@@ -20,11 +20,12 @@ layout: null
     {% for post in posts %}
       {% if related_ids contains post.id %}
         <item>
-          <title>{{ post.title | xml_escape }}</title>
+          <title></title>
           <description>{{ post.content | xml_escape }}</description>
           <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
           <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+          <content>{{ post.content | truncate: 140 | xml_escape }}</content>
         </item>
       {% endif %}
     {% endfor %}
