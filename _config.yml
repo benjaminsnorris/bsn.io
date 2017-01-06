@@ -125,7 +125,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-seo-tag
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 
