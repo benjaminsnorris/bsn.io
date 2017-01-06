@@ -28,6 +28,12 @@ defaults:
       type: apps
     values:
       layout: post
+  -
+    scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
 
 # Google services
 google_verification:
