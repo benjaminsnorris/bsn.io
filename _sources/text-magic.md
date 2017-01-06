@@ -1,5 +1,4 @@
 ---
-collection:     sources
 title:          TextMagic
 date:           2016-12-28
 release_date:   2016-09-01
