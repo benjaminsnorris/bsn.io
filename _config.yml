@@ -134,3 +134,5 @@ collections:
     permalink: /libraries/:path/
   apps:
     output: true
+  drafts:
+    output: true
