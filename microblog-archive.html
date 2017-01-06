@@ -1,23 +1,22 @@
 ---
 layout: page
-title: Archive
-permalink: /archive/
+title: Microblog&nbsp;Archive
+permalink: /microblog-archive/
 tags: archive
 ---
 
-<div class="posts">
+<div class="posts archive">
   {% for post in site.posts %}
     {% if post.categories contains "microblog" %}
-    {% else %}
       <div class="post py2">
-          <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-              <h3 class="post-title">{{ post.title }}</h3>
-          </a>
+          {{ post.content }}
+          <a href="{{ post.url }}" class="h5">➞ {{ post.date | date: site.date_time }}</a>
         {% if post.categories.size > 0 %}
           <span class="post-meta small">
             {% for category in post.categories %}
-            <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+              {% if category != 'microblog' %}
+                <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+              {% endif %}
             {% endfor %}
           </span>
         {% endif %}

@@ -38,6 +38,10 @@ img + em {
   max-width: 20rem;
 }
 
+.archive img {
+  display: none;
+}
+
 body {
           box-sizing: border-box;
      -moz-box-sizing: border-box;

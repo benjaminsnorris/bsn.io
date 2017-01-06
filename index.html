@@ -10,12 +10,17 @@ layout:       default
         {% if post.categories contains "microblog" %}
           <div class="post py2 microblog">
             <p class="post-title">{{ post.content }}</p>
-            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p class="post-meta h5">{{ post.date | date: site.date_time }}</p></a>
+            <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
+            <div class="post-meta">
+              {% for category in post.categories %}
+                <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
+              {% endfor %}
+            </div>
           </div>
         {% else %}
           <div class="post py3">
             <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <a href="{{ post.url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
             <p class="post-summary">
               {% if post.summary %}
                 {{ post.summary }}

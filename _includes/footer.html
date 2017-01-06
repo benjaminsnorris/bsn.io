@@ -1,14 +1,14 @@
 <footer class="center">
   <div class="measure">
     <small>
-      Writings and other content from <a href="https://bsn.design">BSN Design</a>.<br>
+      Writings and other content from <a href="https://bsn.design">BSN&nbsp;Design</a>.<br>
       {% for page in site.pages %}
           {% if page.tags contains "archive" %}
-              <a href="{{ page.url }}">{{ page.title }}</a>
+              <a href="{{ page.url }}">{{ page.title }}</a> |
           {% endif %}
       {% endfor %}
-      | <a href="/categories/">Categories</a>
-      | <a href="/microblog-feed.xml">Microblog Feed</a>
+      <a href="/feed.xml">Blog&nbsp;Feed</a>
+      | <a href="/microblog-feed.xml">Microblog&nbsp;Feed</a>
     </small>
   </div>
 </footer>
