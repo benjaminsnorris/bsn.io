@@ -1,9 +1,8 @@
 ---
-collection:     apps
 title:          Pointedly
-date:           2016-06-15
+date:           2016-12-20
 release_date:   2014-12-09
-update_date:    2016-06-15
+update_date:    2016-12-20
 external_link:  http://bsn.design/pointedly
 store_link:     https://a.bsn.io/pointedly
 categories:     personal

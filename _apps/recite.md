@@ -1,5 +1,4 @@
 ---
-collection:     apps
 title:          Recite
 date:           2016-06-10
 release_date:   2016-04-13
@@ -12,4 +11,4 @@ summary:        Memorize anything.
 
 Recite. Memorize anything.
 
-_More info coming soon…_
+🚧 _More info coming soon…_

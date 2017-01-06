@@ -1,5 +1,4 @@
 ---
-collection:     apps
 title:          Crash Bowling
 date:           2015-11-25
 release_date:   2015-10-28

@@ -1,8 +1,8 @@
 ---
-collection:     apps
 title:          Align
-date:           2016-09-07
-update_date:    2016-09-13
+date:           2016-12-19
+release_date:   2014-12-19
+update_date:    2016-09-07
 external_link:  http://www.aligntool.com
 store_link:     https://itunes.apple.com/app/id1106211043
 categories:     professional
