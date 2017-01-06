@@ -3,7 +3,7 @@
 title: Using Workflow to publish to GitHub pages
 summary: Leverage the power of automation to reduce friction in publishing from anywhere
 categories: process reference
-date: 2017-01-06 08:54:09-0700
+date: 2017-01-06 08:56:23-0700
 ---
 
 ## Microblog posts
@@ -34,7 +34,7 @@ The update workflows will take in an existing file, find it on GitHub, and commi
 
 
 ## Going meta
-One of the most fun things about writing this post describing my new process is actually using that new process. I even added a step to publish and update drafts on my site so that I can preview them and make sure all of the links are working properly before publishing. So I have written this post in iA Writer, published a draft and a few updates to my blog using Workflow, and am now publishing and sharing the actual post using Workflow. 💥
+One of my favorite parts of writing this post describing my new process is using that process. I even added a step to publish and update drafts on my site so that I can preview them and make sure all of the links are working properly before publishing. So I have written this post in iA Writer, published a draft and a few updates to my blog using Workflow, and am now publishing and sharing the actual post using Workflow. 💥
 
 
 ## Onward
