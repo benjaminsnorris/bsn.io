@@ -76,6 +76,8 @@ layout: default
   {% include post_footer.html %}
 {% endif %}
 
+{% include post_pagination.html %}
+
 {% if site.show_related_posts %}
   {% if page.collection == "apps" %}
     {% assign all_posts = (site.apps | sort: 'date') | reverse %}
