@@ -1,9 +1,10 @@
 ---
 
-title: Using Workflow to publish to GitHub pages
+title: Using Workflow to publish to GitHub Pages
 summary: Leverage the power of automation to reduce friction in publishing from anywhere
 categories: process reference
 date: 2017-01-06 08:56:45-0700
+
 ---
 
 ## Microblog posts
