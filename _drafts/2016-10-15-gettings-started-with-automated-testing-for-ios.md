@@ -1,5 +1,4 @@
 ---
-layout:         post
 title:          Getting started with automated testing for iOS
 date:           2016-10-14 13:00:00
 summary:        An introduction to the basics of protecting your future self from your current self

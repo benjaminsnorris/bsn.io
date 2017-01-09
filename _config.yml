@@ -34,7 +34,7 @@ defaults:
       path: ""
       type: drafts
     values:
-      layout: post
+      layout: draft
 
 # Google services
 google_verification:
