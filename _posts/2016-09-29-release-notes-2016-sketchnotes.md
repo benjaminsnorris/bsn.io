@@ -1,6 +1,6 @@
 ---
 title:          Release Notes 2016 Sketchnotes
-date:           2016-09-29 17:30:00
+date:           2016-09-29 17:30:00-0700
 summary:        A collection of my sketchnotes from the Release Notes 2016 conference
 categories:     sketchnotes
 minutes:        15

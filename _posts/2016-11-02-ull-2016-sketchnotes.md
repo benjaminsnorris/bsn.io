@@ -1,6 +1,6 @@
 ---
 title:          Úll 2016 Sketchnotes
-date:           2016-11-02 08:45:00
+date:           2016-11-02 08:45:00-0700
 summary:        A collection of my sketchnotes from the Úll 2016 conference
 categories:     sketchnotes
 minutes:        15

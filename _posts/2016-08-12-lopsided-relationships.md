@@ -1,6 +1,6 @@
 ---
 title:          Lopsided relationships
-date:           2016-08-12 14:10:00
+date:           2016-08-12 14:10:00-0700
 summary:        Navigating both sides of uneven relationships
 categories:     musings
 ---

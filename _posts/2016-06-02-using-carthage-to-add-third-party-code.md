@@ -1,6 +1,6 @@
 ---
 title:          Using Carthage to add third-party code
-date:           2016-06-02 10:30:00
+date:           2016-06-02 10:30:00-0700
 summary:        Simplify third-party dependencies using Carthage and Git submodules.
 categories:     reference process
 ---

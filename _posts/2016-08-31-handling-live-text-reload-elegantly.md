@@ -1,7 +1,7 @@
 ---
 title:          Handling live text reload elegantly
-date:           2016-08-31 13:00:00
-update_date:    2016-09-02 06:20:00
+date:           2016-08-31 13:00:00-0700
+update_date:    2016-09-02 06:20:00-0700
 summary:        Easy steps to support concurrent editing without losing cursor position or text selection in UITextView
 categories:     code reference
 ---

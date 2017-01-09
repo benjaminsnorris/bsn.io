@@ -1,6 +1,6 @@
 ---
 title:          UHEA 2016 Sketchnotes
-date:           2016-06-11 17:30:00
+date:           2016-06-11 17:30:00-0700
 summary:        Sketchnotes from a few talks at the Utah Home Education Association convention.
 categories:     sketchnotes
 minutes:        5

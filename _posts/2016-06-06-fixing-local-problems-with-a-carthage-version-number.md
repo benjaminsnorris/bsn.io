@@ -1,7 +1,7 @@
 ---
 title:          Fixing local problems with a Carthage version number
-date:           2016-06-06 09:30:00
-update_date:    2016-10-04 12:48:00-06:00
+date:           2016-06-06 09:30:00-0700
+update_date:    2016-10-04 12:48:00-0600
 summary:        For those times when Carthage will not bend itself to your will.
 categories:     reference
 ---
