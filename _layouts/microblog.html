@@ -5,6 +5,13 @@ layout: default
 <article class="post-content">
   {{ content }}
   <div class="post-meta">{{ page.date | date: site.date_time }}</div>
+  <div class="post-meta">
+    {% for category in page.categories %}
+      {% if category != 'microblog' %}
+        <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </article>
 
 {% include post_pagination.html %}
