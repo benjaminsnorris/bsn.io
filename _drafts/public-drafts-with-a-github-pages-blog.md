@@ -3,7 +3,7 @@
 title: Public drafts with a GitHub Pages blog
 summary: 
 categories: process reference
-date: 2017-01-09 20:49:55-0700
+date: 2017-01-09 20:57:44-0700
 ---
 public-drafts-with-a-github-pages-blog
 
@@ -28,7 +28,7 @@ Jekyll [already supports drafts](https://jekyllrb.com/docs/drafts/), but the onl
 ### Add drafts collection
 In your `_config.yml` file, add a few lines to enable the drafts collection:
 
-```yml
+```YAML
   collections:
     drafts:
       output: true
@@ -37,7 +37,7 @@ In your `_config.yml` file, add a few lines to enable the drafts collection:
 ### Specify default layout
 Also in `_config.yml`, it is easiest to provide a default layout for all drafts. This way, you can omit the layout from the front matter of the actual post, and it will display correctly when it is a draft, as well as when you publish the post.
 
-```yml
+```YAML
   defaults:
     -
       scope:
@@ -50,7 +50,7 @@ Also in `_config.yml`, it is easiest to provide a default layout for all drafts.
 ### Make an index page
 At this point, the individual draft pages will display correctly, but it is much easier to have a page with a list of all drafts. It can be as simple as this:
 
-```html
+```HTML
 
 
 layout:       page
@@ -83,14 +83,14 @@ meta_robots:  noindex
 ### Prevent indexing
 You may have noticed an entry in the front matter of the drafts index page with the key `meta_robots`. I have something similar in the `draft.html` default layout:
 
-```yml
+```YAML
 
 
 layout: post
 meta_robots: noindex
 
 
-{{ content }}
+\{{ content }}
 ```
 
 These insert the correct metadata in the `head` using the following code:
