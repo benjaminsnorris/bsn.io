@@ -3,7 +3,8 @@
 title: Public drafts with a GitHub Pages blog
 summary: 
 categories: process reference
-date: 2017-01-11 10:41:11-0700
+minutes: 7
+date: 2017-01-11 10:43:19-0700
 ---
 
 
