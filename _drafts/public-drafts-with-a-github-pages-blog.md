@@ -3,7 +3,7 @@
 title: Public drafts with a GitHub Pages blog
 summary: 
 categories: process reference
-date: 2017-01-09 21:43:24-0700
+date: 2017-01-11 10:36:12-0700
 ---
 
 
@@ -48,7 +48,28 @@ This ensures that the drafts can be posted without affecting the site adversely 
 
 
 ## Add workflows
-- Publish draft
-- Update draft
-- Publish post
-- Delete files
+All of this work is nice, but without some additions and updates to the workflows I [posted previously]({% post_url 2017-01-06-using-workflow-to-publish-to-github-pages %}), this would still require publishing from a computer. As I looked into support for publishing drafts using Workflow, the one piece missing was the ability to send a `DELETE` message to the GitHub API. I asked Workflow support if there was any way to do this and got a fantastic response:
+
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr"><a href="https://twitter.com/bsndesign">@bsndesign</a> Here&#39;s a workaround in the mean time: <a href="https://t.co/SeyLjr7Ixr">pic.twitter.com/SeyLjr7Ixr</a></p>&mdash; Workflow (@WorkflowHQ) <a href="https://twitter.com/WorkflowHQ/status/817639735183036416">January 7, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Armed with this workaround, I was able to create a few additional workflows:
+
+- [Publish draft](/resources/publish-draft-to-github.wflow)
+- [Update draft](/resources/update-draft-on-github.wflow)
+- [Delete files](/resources/delete-files-on-github.wflow)
+
+
+### Improved post publishing
+Finally, I wanted to handle the draft well when actually publishing the blog post. When publishing a post that was previously published as a draft, the workflow will hit GitHub first to see if the draft is there, and if so, the draft will be deleted and the post will be published with the correct date. This completes the draft process, allowing you to start by publishing a draft, update it one or more times for review, and then actually publishing the post.
+
+- [Publish post](/resources/publish-blog-post-to-github.wflow)
+
+
+## Previous workflows
+Just for reference, here are the previous workflows that have all been updated:
+
+- [Update post](/resources/update-blog-post-on-github.wflow)
+- [Microblog post](/resources/microblog-post-to-github.wflow)
+- [Publish files](/resources/publish-files-to-github.wflow)
+- [Update files](/resources/update-files-on-github.wflow)
+- [Publish photos](/resources/publish-photos-to-github.wflow)
