@@ -4,7 +4,7 @@ title: Public drafts with a GitHub Pages blog
 summary: 
 categories: process reference
 minutes: 7
-date: 2017-01-11 10:57:31-0700
+date: 2017-01-11 17:56:41-0700
 ---
 
 
@@ -49,7 +49,7 @@ This ensures that the drafts can be posted without impacting the site or having 
 
 
 ## Add workflows
-All of this work is nice, but without some additions and updates to the workflows I [posted previously]({% post_url 2017-01-06-using-workflow-to-publish-to-github-pages %}), this would still require publishing from a computer. As I looked into support for publishing drafts using Workflow, the one piece missing was the ability to send a `DELETE` message to the GitHub API. I asked Workflow support if there was any way to do this and got a fantastic response:
+All of this work is nice, but without some additions and updates to the workflows I [posted previously]({% post_url 2017-01-06-using-workflow-to-publish-to-github-pages %}), this would still require publishing from a computer. As I looked into support for publishing drafts using Workflow, the one piece missing was the ability to send a `DELETE` message to the GitHub API. I asked Workflow support if there was any way to do this and got a fantastic response with a workaround.
 
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr"><a href="https://twitter.com/bsndesign">@bsndesign</a> Here&#39;s a workaround in the mean time: <a href="https://t.co/SeyLjr7Ixr">pic.twitter.com/SeyLjr7Ixr</a></p>&mdash; Workflow (@WorkflowHQ) <a href="https://twitter.com/WorkflowHQ/status/817639735183036416">January 7, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
