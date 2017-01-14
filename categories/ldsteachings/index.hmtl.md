@@ -1,0 +1,5 @@
+---
+layout: category
+title: LDS teachings
+category: ldsteachings
+---
