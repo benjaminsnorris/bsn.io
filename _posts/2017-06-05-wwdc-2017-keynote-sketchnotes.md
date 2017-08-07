@@ -3,6 +3,7 @@
 title: WWDC 2017 Keynote Sketchnotes
 summary: Sketchnotes from the keynote of WWDC 2017
 categories: sketchnotes
+minutes: 8
 date: 2017-06-05 13:18:02-0800
 
 ---
