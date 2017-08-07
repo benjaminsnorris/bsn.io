@@ -1,10 +1,11 @@
 ---
 
 title: Public drafts with a GitHub Pages blog
-summary: 
+summary: Improve the process of publishing from anywhere by previewing drafts on your actual site
 categories: process reference
 minutes: 7
 date: 2017-01-12 08:09:26-0700
+
 ---
 
 
