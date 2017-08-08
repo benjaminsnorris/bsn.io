@@ -1,0 +1,14 @@
+---
+
+title: WWDC 2017 Michelle Obama Event Sketchnotes
+summary: Sketchnotes from the conversation between Michelle Obama and Lisa Jackson
+categories: sketchnotes
+minutes: 5
+date: 2017-06-06 10:45:02-0800
+
+---
+
+The first event of day two at WWDC was what felt like an intimate conversation between Michelle Obama and Lisa Jackson.
+
+![Michelle Obama at WWDC 2017 Sketchnotes](/images/sketchnotes/wwdc-2017/wwdc-2017-michelle-obama-sketchnotes.jpg)
+
