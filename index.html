@@ -6,18 +6,43 @@ layout:       default
 <div class="home">
   {% if posts_count > 0 %}
     <div class="posts">
+      {% for post in site.posts %}
+        {% unless post.categories contains "microblog" %}
+          {% assign featured_post = post %}
+            <div class="post py3 featured">
+              <p class="post-feature-title">Latest Blog Post</p>
+              <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+              <a href="{{ post.url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+              <p class="post-summary">
+                {% if post.summary %}
+                  {{ post.summary }}
+                {% else %}
+                  {{ post.excerpt }}
+                {% endif %}
+              </p>
+              {% if post.categories.size > 0 %}
+              <div class="post-meta">
+                {% for category in post.categories %}
+                <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          {% break %}
+        {% endunless %}
+      {% endfor %}
       {% for post in paginator.posts %}
         {% if post.categories contains "microblog" %}
           <div class="post py2 microblog">
             <p class="post-title">{{ post.content }}</p>
-            <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
+            <a href="{{ post.url }}"><p class="h5 microblog-post-link">➞ {{ post.date | date: site.date_time }}</p></a>
             <div class="post-meta">
               {% for category in post.categories %}
                 <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
               {% endfor %}
             </div>
           </div>
-        {% else %}
+        {% elsif post != featured_post %}
           <div class="post py3">
             <p class="post-meta">{{ post.date | date: site.date_format }}</p>
             <a href="{{ post.url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
