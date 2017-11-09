@@ -6,10 +6,12 @@
 }
 
 .pagination a, .pagination .disabled {
+  display: inline-block;
   background: $category-background;
   border-radius: 0.1875em;
   color: $sub-text;
   padding: 1em 1.5em;
+  margin-bottom: 1rem;
 }
 
 .pagination .disabled {
