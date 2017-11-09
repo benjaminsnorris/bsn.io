@@ -110,7 +110,11 @@ layout: default
     {% if related_ids contains post.id %}
       <div class="post ml2">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <h4 class="post-title">{{ post.title }}</h4>
+          {% if post.categories contains "microblog" %}
+            <h4 class="post-title">{{ post.date | date: site.date_time }}</h4>
+          {% else %}
+            <h4 class="post-title">{{ post.title }}</h4>
+          {% endif %}
           <p class="post-summary">{{ post.summary }}</p>
         </a>
       </div>
