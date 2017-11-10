@@ -8,24 +8,21 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/microblog-feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% assign posts = site.posts %}
-    {% assign related_ids = "|" %}
-    {% for post in posts %}
-      {% if post.categories contains "microblog" %}
-        {% assign related_ids  = related_ids | append: post.id | append: "|" %}
-      {% endif %}
-    {% endfor %}
-    {% assign related_ids = related_ids | split:'|' %}
-    {% assign related_ids = related_ids | slice: 0, 11 %}
-    {% for post in posts %}
+   {% for post in paginator.posts %}
       {% if related_ids contains post.id %}
         <item>
-          <title></title>
-          <description>{{ post.content | xml_escape }}</description>
+          {% if post.categories contains "microblog" %}
+            <title></title>
+            <description>{{ post.content | xml_escape }}</description>
+            <content>{{ post.content | xml_escape }}</content>
+          {% else %}
+            <title>{{ post.title | xml_escape }}</title>
+            <description>{{ post.summary | xml_escape }}</description>
+            <content>{{ post.title | xml_escape }} {{ post.url | prepend: site.baseurl | prepend: site.url }}</content>
+          {% endif %}
           <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
           <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-          <content>{{ post.content | xml_escape }}</content>
           <category>Microblog</category>
         </item>
       {% endif %}

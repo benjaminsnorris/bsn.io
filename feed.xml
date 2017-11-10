@@ -11,10 +11,9 @@ layout: null
     {% assign posts = site.posts %}
     {% assign related_ids = "|" %}
     {% for post in posts %}
-      {% if post.categories contains "microblog" %}
-      {% else %}
+      {% unless post.categories contains "microblog" %}
         {% assign related_ids  = related_ids | append: post.id | append: "|" %}
-      {% endif %}
+      {% endunless %}
     {% endfor %}
     {% assign related_ids = related_ids | split:'|' %}
     {% assign related_ids = related_ids | slice: 0, 11 %}
