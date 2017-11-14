@@ -8,24 +8,22 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/microblog-feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-   {% for post in paginator.posts %}
-      {% if related_ids contains post.id %}
+      {% for post in site.posts limit:10 %}
         <item>
           {% if post.categories contains "microblog" %}
             <title></title>
             <description>{{ post.content | xml_escape }}</description>
-            <content>{{ post.content | xml_escape }}</content>
+            <content xml:base="{{ site.url | xml_escape }}">{{ post.content | xml_escape }}</content>
           {% else %}
             <title>{{ post.title | xml_escape }}</title>
             <description>{{ post.summary | xml_escape }}</description>
-            <content>{{ post.title | xml_escape }} {{ post.url | prepend: site.baseurl | prepend: site.url }}</content>
+            <content xml:base="{{ site.url | xml_escape }}">{{ post.title | xml_escape }} [bsn.io]({{ post.url | prepend: site.baseurl | prepend: site.url }})</content>
           {% endif %}
           <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
           <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
           <category>Microblog</category>
         </item>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
   </channel>
 </rss>
