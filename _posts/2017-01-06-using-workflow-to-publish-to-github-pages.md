@@ -4,7 +4,7 @@ title: Using Workflow to publish to GitHub Pages
 summary: Leverage the power of automation to reduce friction in publishing from anywhere
 categories: process reference
 date: 2017-01-06 08:56:45-0700
-update_date: 2017-01-12 08:15:34-0700
+update_date: 2017-11-14 17:00:54-0700
 ---
 
 *Update: I published [a follow-up post]({% post_url 2017-01-12-public-drafts-with-a-github-pages-blog %}) about incorporating drafts into the process.*
@@ -21,7 +21,7 @@ I only recently started posting my professional content to Instagram, such as sk
 - Workflow commits the image and, if that is successful, the text post to my blog repository using the GitHub API.
 - Optionally compose a tweet with the image and text of the post.
 
-I am pretty excited about how simple it is. I have made the workflow so that it can be launched from some text, an image, or even directly in Workflow and select the image and write the text later. This has helped reduce the friction and encourages me to post more frequently. You can still [follow me on Instagram](https://www.instagram.com/bsndesign/), but all of my posts will also be available on my [microblog](/microblog/).
+I am pretty excited about how simple it is. I have made the workflow so that it can be launched from some text, an image, or even directly in Workflow and select the image and write the text later. This has helped reduce the friction and encourages me to post more frequently. You can still [follow me on Instagram](https://www.instagram.com/sketchnotable/), but all of my posts will also be available on my [microblog](/microblog/).
 
 
 ## Full blog posts
