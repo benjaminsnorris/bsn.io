@@ -5,10 +5,12 @@ permalink: /archive/
 tags: archive
 ---
 
+<div class="mb3">
+  <a href="/microblog-archive/">View Microblog Archive</a>
+</div>
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.categories contains "microblog" %}
-    {% else %}
+    {% unless post.categories contains "microblog" %}
       <div class="post py2">
           <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
@@ -22,6 +24,6 @@ tags: archive
           </span>
         {% endif %}
       </div>
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>
