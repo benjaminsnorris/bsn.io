@@ -1,7 +1,7 @@
 ---
 collection:     sources
 title:          LoadingBanner
-date:           2016-03-10
+date:           2017-08-21
 release_date:   2016-02-22
 update_date:    2017-08-21
 external_link:  https://github.com/benjaminsnorris/LoadingBanner
