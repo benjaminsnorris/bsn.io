@@ -2,9 +2,11 @@
 layout: page
 title: Microblog&nbsp;Archive
 permalink: /microblog-archive/
-tags: archive
 ---
 
+<div class="mb3">
+  <a href="/archive/">View Blog Archive</a>
+</div>
 <div class="posts archive">
   {% for post in site.posts %}
     {% if post.categories contains "microblog" %}

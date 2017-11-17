@@ -5,7 +5,7 @@ categories: process
 date: 2017-11-08 23:44:53-0700
 ---
 
-I have [written](% post_url 2017-01-06-using-workflow-to-publish-to-github-pages %) [before]({% post_url 2017-01-12-public-drafts-with-a-github-pages-blog %}) about my attempts to publish to my GitHub Pages blog from iOS. I have recently started using [Working Copy](https://workingcopyapp.com/) to make this even easier. Basically, I am trying to remove all of my excuses in the hopes that I will be more diligent in posting to my blog. 
+I have [written](% post_url 2017-01-06-using-workflow-to-publish-to-github-pages %) [before]({% post_url 2017-01-12-public-drafts-with-a-github-pages-blog %}) about my attempts to publish to my GitHub Pages blog from iOS. I have recently started using [Working Copy](https://workingcopyapp.com/) to make this even easier. Basically, I am trying to remove all of my excuses in the hopes that I will be more diligent in posting to my blog.
 
 There are three pieces to my new process that I want to explore:
 
@@ -16,21 +16,20 @@ There are three pieces to my new process that I want to explore:
 ## Microblog posts
 Since September 2016, I have been publishing [microblog](/microblog) posts to my own site in addition to sharing them on [Twitter](https://twitter.com/bsndesign) or [Instagram](https://instagram.com/sketchnotable), and more recently on [Micro.blog](https://micro.blog/bsn). This has come as a direct result of listening to [Manton Reece](http://manton.org) and agreeing with his thoughts on [owning your content](http://www.manton.org/2017/02/owning-your-content-matters-right-now.html). I want to continue the simplicity of being able to post a thought quickly, particularly with an image since I am often sharing my [sketchnotes](/categories/sketchnotes).
 
-Prior to using Working Copy, my process involved [Workflow]() recipes that made use of the GitHub API to post the content to my site repository. Essentially, I still use the same process in terms of taking the text or images and publishing them to my site. But my [new Workflow recipe]() is considerably simpler, and leverages Working Copy and [X-Callback-URLs](http://x-callback-url.com/) to simplify the process.
+Prior to using Working Copy, my process involved [Workflow](https://workflow.is) recipes that made use of the GitHub API to post the content to my site repository. Essentially, I still use the same process in terms of taking the text or images and publishing them to my site. But my [new Workflow recipe]( ) is considerably simpler, and leverages Working Copy and [X-Callback-URLs](http://x-callback-url.com/) to simplify the process.
 
 ## New drafts
-My favorite writing app, [iA Writer](), gives me great flexibility in writing my posts. I have gone back and forth on storing my drafts just in iA Writer using iCloud, or having them live in my site repository. Thanks to iA Writer’s feature of opening directly a file from another app, and Working Copy serving as a document provider, I can create a draft in Working Copy and edit it in iA Writer. As of now, my current process is to create a draft in iA Writer using [this Workflow](). When I feel like it is ready, I will publish it as a draft to my site using [this Workflow](). That gives me the chance to see it in context on my site, together with all images and links and make sure that everything looks good and works properly.
+My favorite writing app, [iA Writer](https://ia.net/writer/), gives me great flexibility in writing my posts. I have gone back and forth on storing my drafts just in iA Writer using iCloud, or having them live in my site repository. Thanks to iA Writer’s feature of opening directly a file from another app, and Working Copy serving as a document provider, I can create a draft in Working Copy and edit it in iA Writer. As of now, my current process is to create a draft in iA Writer using [this Workflow]( ). When I feel like it is ready, I will publish it as a draft to my site using [this Workflow]( ). That gives me the chance to see it in context on my site, together with all images and links and make sure that everything looks good and works properly.
 
 ## Publishing
-The final step is taking my post from draft status to published. As I mentioned, at this point, the post is live on my site in the Drafts section, so I can proofread and check everything. I do my editing either in Working Copy or iA Writer, committing the changes back to GitHub. When I am finally ready to pull the trigger, [this Workflow]() essentially moves the file from the Drafts folder to the Posts folder, and edits the file name a bit to make it an official post on my blog. The Workflow takes me to my site at the end so I can see the post on last time in all its published glory.
+The final step is taking my post from draft status to published. As I mentioned, at this point, the post is live on my site in the Drafts section, so I can proofread and check everything. I do my editing either in Working Copy or iA Writer, committing the changes back to GitHub. When I am finally ready to pull the trigger, [this Workflow]( ) essentially moves the file from the Drafts folder to the Posts folder, and edits the file name a bit to make it an official post on my blog. The Workflow takes me to my site at the end so I can see the post on last time in all its published glory.
 
 ## Summary
-Using Working Copy on my iPad / iPhone means that I always have the entire source code of my site with me. It has made life so much easier when I want to edit or tweak the site. Since I prefer to write in [Markdown](), and to do everything on an iOS device, this has been the ideal setup for me. Simple integrations with Workflow ensure that my process is frictionless. Hopefully this is enough to ensure that I continue to post more often to my blog. As was true when I started this version of the blog, I continue to enjoy the benefits of [posting into obscurity](), so most of my writing is for my own benefit. I do have a goal to be a better writer, so as long as I am making progress toward that goal, my own benefit is more than sufficient cause to continue to write.
+Using Working Copy on my iPad / iPhone means that I always have the entire source code of my site with me. It has made life so much easier when I want to edit or tweak the site. Since I prefer to write in [Markdown](https://en.wikipedia.org/wiki/Markdown), and to do everything on an iOS device, this has been the ideal setup for me. Simple integrations with Workflow ensure that my process is frictionless. Hopefully this is enough to ensure that I continue to post more often to my blog. As was true when I started this version of the blog, I continue to enjoy the benefits of [posting into obscurity]({% post_url 2016-05-31-the-luxury-of-launching-into-obscurity %}), so most of my writing is for my own benefit. I do have a goal to be a better writer, so as long as I am making progress toward that goal, my own benefit is more than sufficient cause to continue to write.
 
 Just for reference, here are all of the Workflow recipes I am currently using for this process:
 
-- [Microblog post]()
-- [New draft]()
-- [Publish draft]()
-- [Publish post]()
-
+- [Microblog post]( )
+- [New draft]( )
+- [Publish draft]( )
+- [Publish post]( )
