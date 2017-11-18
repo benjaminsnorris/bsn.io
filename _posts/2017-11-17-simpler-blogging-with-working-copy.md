@@ -9,9 +9,9 @@ I have [written]({% post_url 2017-01-06-using-workflow-to-publish-to-github-page
 
 There are three pieces to my new process that I want to explore:
 
-1. Microblog posts
-2. New drafts
-3. Publishing
+1. [Microblog posts](#microblog-posts)
+2. [New drafts](#new-drafts)
+3. [Publishing](#publishing)
 
 ## Microblog posts
 Since September 2016, I have been publishing [microblog](/microblog) posts to my own site in addition to sharing them on [Twitter](https://twitter.com/bsndesign) or [Instagram](https://instagram.com/sketchnotable), and more recently on [Micro.blog](https://micro.blog/bsn). This has come as a direct result of listening to [Manton Reece](http://manton.org) and agreeing with his thoughts on [owning your content](http://www.manton.org/2017/02/owning-your-content-matters-right-now.html). I want to continue the simplicity of being able to post a thought quickly, particularly with an image since I am often sharing my [sketchnotes](/categories/sketchnotes).
