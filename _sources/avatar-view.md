@@ -8,4 +8,8 @@ repo_path:      benjaminsnorris/AvatarView
 categories:     personal
 ---
 
-🚧 _More info coming soon…_
+This library started from a common need to display avatars to represent people in different apps. Usually, there is an image for the person, and if not, initials should be shown instead. As this has been used in different apps, it has grown to include additional custom views:
+
+- Individual avatar
+- Double avatar, which can be configured similar to the avatars used in the Apple Messages app
+- Avatar line, which can have as many avatars as desired, and optionally display how many additional people are represented by the avatars

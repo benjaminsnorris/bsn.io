@@ -8,4 +8,4 @@ repo_path:      benjaminsnorris/SimpleSurvey
 categories:     personal
 ---
 
-🚧 _More info coming soon…_
+This is a library I made in order to prompt for user feedback or App Store reviews in a pleasant, non-obtrusive way. It is designed to drop down a view with a question and two answers. The typical flow would be to ask whether the user is having a good experience, and if so, ask for a review, and if not, ask for email feedback.

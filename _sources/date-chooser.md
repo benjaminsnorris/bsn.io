@@ -8,4 +8,4 @@ repo_path:      benjaminsnorris/DateChooser
 categories:     personal
 ---
 
-🚧 _More info coming soon…_
+This library provides a `UIDatePicker` wrapped in a `UIAlertController`-like view along with some helpful actions. This has allowed me to provide a better experience in many apps for choosing dates or time intervals. It is highly configurable, either through Interface Builder or in code, allowing it to be used in a variety of situations.
