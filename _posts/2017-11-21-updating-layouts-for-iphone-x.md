@@ -2,7 +2,7 @@
 title: Updating layouts for iPhone X
 summary: An ongoing summary of lessons learned from updating designs for the iPhone X
 categories: reference code
-date: 2017-11-20 09:31:39-0700
+date: 2017-11-21 11:35:01-0700
 ---
 
 Apple generally provides us as developers plenty of notice to make updates, whether explicit or implied. There are a number of these that I have been doing slowly this year for various reasons—High Sierra, Swift 4, iPhone X layout. Starting at WWDC, we could have been updating our apps to be prepared for the iPhone X layout changes, although none of us knew exactly what to expect. All we knew was that “safe area layout guides” were a thing and we should be using them.
