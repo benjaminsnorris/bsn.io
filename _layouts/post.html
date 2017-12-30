@@ -49,14 +49,14 @@ layout: default
   </div>
 {% endif %}
 
-{% if post.categories contains 'microblog' %}
+{% if page.categories contains 'microblog' %}
   <div class="post-content">
     {{ content }}
   </div>
 {% else %}
-<article class="post-content">
-  {{ content }}
-</article>
+  <article class="post-content">
+    {{ content }}
+  </article>
 {% endif %}
 
 {% if site.show_sharing_icons %}
