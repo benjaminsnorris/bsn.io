@@ -14,4 +14,12 @@ layout: default
   </div>
 </div>
 
+{% if page.amazon_link or page.audible_link %}
+  <div class="post-external-links">
+   {% if page.amazon_link %}
+     <a href="{{ page.amazon_link }}" class="button button-blue"><span class="fa fa-amazon"></span><span class="title">View on Amazon</span></a>
+    {% endif %}
+  </div>
+{% endif %}
+
 {% include post_pagination.html %}
