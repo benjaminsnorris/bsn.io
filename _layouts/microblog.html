@@ -14,10 +14,10 @@ layout: default
   </div>
 </div>
 
-{% if page.amazon_link or page.audible_link %}
+{% if page.external_link %}
   <div class="post-external-links">
-   {% if page.amazon_link %}
-     <a href="{{ page.amazon_link }}" class="button button-blue"><span class="fa fa-amazon"></span><span class="title">View on Amazon</span></a>
+   {% if page.external_link and page.categories contains 'book' %}
+     <a href="{{ page.external_link }}" class="button button-blue"><span class="fa fa-amazon"></span><span class="title">View on Amazon</span></a>
     {% endif %}
   </div>
 {% endif %}
