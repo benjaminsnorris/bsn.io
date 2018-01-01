@@ -15,7 +15,7 @@ layout: default
       {% assign posts = (site.sources | sort: 'date') | reverse %}
     {% else %}
       {% assign posts = site.categories.[page.category] %}
-      	<p class="post-meta h5">{{ site.categories.[page.category].size }} posts</p>
+      	<p class="post-meta h3">{{ site.categories.[page.category].size }} posts</p>
     {% endif %}
     {% for post in posts %}
       {% if post.categories contains page.category %}
