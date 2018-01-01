@@ -21,10 +21,10 @@ layout: default
       {% if post.categories contains page.category %}
         {% if post.categories contains "microblog" %}
           <div class="post py2 microblog">
+            {% if post.external_link %}
+              <span class="social-icons"><a class="fa fa-external-link" href="{{ post.external_link }}" target="_blank"></a></span>
+            {% endif %}
             <p class="post-title">{{ post.content }}</p>
-              {% if post.external_link %}
-                <span class="social-icons"><a class="fa fa-external-link" href="{{ post.external_link }}" target="_blank"></a></span>
-              {% endif %}
             <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
             <div class="post-meta">
               {% for category in post.categories %}
