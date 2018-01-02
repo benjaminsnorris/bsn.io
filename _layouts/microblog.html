@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post-content">
+<div class="post-content">
   {{ content }}
   <div class="post-meta">{{ page.date | date: site.date_time }}</div>
   <div class="post-meta">
@@ -12,6 +12,14 @@ layout: default
       {% endif %}
     {% endfor %}
   </div>
-</article>
+</div>
+
+{% if page.external_link %}
+  <div class="post-external-links">
+   {% if page.external_link and page.categories contains 'book' %}
+     <a href="{{ page.external_link }}" class="button button-blue"><span class="fa fa-amazon"></span><span class="title">View on Amazon</span></a>
+    {% endif %}
+  </div>
+{% endif %}
 
 {% include post_pagination.html %}

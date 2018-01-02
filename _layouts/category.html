@@ -5,6 +5,9 @@ layout: default
   <header class="post-header">
     <h1 class="h2"><a href=".." class="post-link">Categories</a> / {{ page.title }}</h1>
   </header>
+  <div class="post-content">
+  {{ content }}
+  </div>
   <div class="posts">
     {% if page.type == "app" %}
       {% assign posts = (site.apps | sort: 'date') | reverse %}
@@ -12,6 +15,7 @@ layout: default
       {% assign posts = (site.sources | sort: 'date') | reverse %}
     {% else %}
       {% assign posts = site.categories.[page.category] %}
+      	<p class="post-meta h3">{{ site.categories.[page.category].size }} posts</p>
     {% endif %}
     {% for post in posts %}
       {% if post.categories contains page.category %}
@@ -23,6 +27,9 @@ layout: default
               {% for category in post.categories %}
                 <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
               {% endfor %}
+              {% if post.external_link %}
+                <span class="social-icons"><a class="fa fa-external-link" href="{{ post.external_link }}" target="_blank"></a></span>
+              {% endif %}
             </div>
           </div>
         {% else %}
