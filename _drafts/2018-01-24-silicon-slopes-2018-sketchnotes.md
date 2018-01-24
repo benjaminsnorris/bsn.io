@@ -9,6 +9,8 @@ minutes: 15
 
 Last week, we had the chance to attend the Silicon Slopes 2018 Tech Summit with almost everyone from our office. This has been one of the fastest growing tech conferences in Utah, and this year had an impressive lineup of speakers. I was thrilled to be able to sketchnote all of the sessions I attended, and want to share them here.
 
+[PDF of entire collection (23 MB)](/images/sketchnotes/silicon-slopes-2018/silicon-slopes-2018-sketchnotes.pdf)
+
 ![Silicon Slopes 2018 Sketchnote 01](http://bsn.io/images/sketchnotes/silicon-slopes-2018/silicon-slopes-2018-sketchnote-01.jpg)
 _Opening Panel—The State of Silicon Slopes_
 
