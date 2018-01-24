@@ -1,7 +1,7 @@
 ---
 title: Getting started with iOS development
 summary: A basic set of resources for those considering learning to code iOS apps
-categories: reference
+categories: reference learning
 date: 2018-01-23 12:05:33-0700
 
 ---
