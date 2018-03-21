@@ -3,7 +3,7 @@ title: Automating Scripture Quotes
 summary: Using Workflow to extract markdown quotes of scriptures
 categories: reference
 tags: workflow
-date: 2018-03-21 14:46:06-0600
+date: 2018-03-21 16:02:05-0600
 ---
 
 Part of being a [Mormon](mormon.org) is regularly speaking or teaching in church. The official [Gospel Library app](https://www.lds.org/pages/mobileapps/gospellibrary?lang=eng) makes it really simple to find resources to use in those talks and lessons. I like to have all of my content in [markdown](https://en.wikipedia.org/wiki/Markdown), which makes creating and referencing the content easy. But getting the quotes into markdown is not always easy. This morning, I created a few [Workflow](https://workflow.is) recipes to simplify the process.
