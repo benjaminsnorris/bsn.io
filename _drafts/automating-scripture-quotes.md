@@ -29,7 +29,7 @@ gospellibrary://content/scriptures/dc-testament/dc/130?lang=eng
 
 The second workflow builds on the first in some important ways. One of the most important pieces is grabbing the title and creating a formatted markdown link.
 
-The other important piece is grabbing the verses and inserting them in the link if needed. As you might notice above, a link from Gospel Library will be to the chapter of scripture, but not the verses. One note here: if you are grabbing a link to content that does not have chapter a verses, the link will not be changed.
+The other important piece is grabbing the verses and inserting them in the link if needed. As you might notice above, a link from Gospel Library will be to the chapter of scripture, but not the verses. One note here: if you are grabbing a link to content that does not have chapter and verses, the link will not be changed.
 
 The markdown link looks like this:
 
@@ -52,3 +52,11 @@ The final piece is getting out the actual text of the quote. This last workflow 
 ```
 
 <a class="button button-blue"><span class="fa fa-quote-right" href="/resources/markdown-quote-from-gospel-library.wflow"/><span>Download markdown quote workflow</span></a>
+
+All three workflows have to be downloaded and installed in order to get the final quote. When they are, it is just one touch to take selected text and get a nicely formatted quote.
+
+> 18 Whatever principle of intelligence we attain unto in this life, it will rise with us in the resurrection.
+> 
+> 19 And if a person gains more knowledge and intelligence in this life through his diligence and obedience than another, he will have so much the advantage in the world to come.
+> 
+> [Doctrine and Covenants 130:18-19](gospellibrary://content/scriptures/dc-testament/dc/130.18-19?lang=eng)
