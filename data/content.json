@@ -1,0 +1,32 @@
+{
+  "relatedApps": [
+    {
+      "identifier": 933257819,
+      "name": "Pointedly",
+      "subtitle": "Keep score",
+      "icon": "https://bsn.io/data/pointedly/icon.png",
+      "url": "https://bsn.design/download/pointedly",
+    },
+    {
+      "identifier": 1097012932,
+      "name": "Light Table",
+      "subtitle": "Trace and draw anywhere",
+      "icon": "https://bsn.io/data/light-table/icon.png",
+      "url": "https://bsn.design/download/light-table",
+    },
+    {
+      "identifier": 1027638921,
+      "name": "Carrier",
+      "subtitle": "Messages on delay",
+      "icon": "https://bsn.io/data/carrier/icon.png",
+      "url": "https://bsn.design/download/carrier",
+    },
+    {
+      "identifier": 987558663,
+      "name": "Recite",
+      "subtitle": "Memorize anything",
+      "icon": "https://bsn.io/data/recite/icon.png",
+      "url": "https://bsn.design/download/recite",
+    }
+  ]
+}
