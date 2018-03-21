@@ -10,8 +10,6 @@ Part of being a [Mormon](mormon.org) is regularly speaking or teaching in church
 
 ## Converting links
 
-<a class="button button-blue"><span class="fa fa-cogs" href="/resources/convert-link-for-gospel-library.wflow"/><span>Convert link</span></a>
-
 The first workflow allows you to select any text in the Gospel Library app and extracts the web link and converts it. The link start as something like this:
 
 ```
@@ -24,10 +22,10 @@ The workflow converts the link from a web link to a link that will open the Gosp
 gospellibrary://content/scriptures/dc-testament/dc/130?lang=eng
 ```
 
+<a class="button button-blue"><span class="fa fa-cogs" href="/resources/convert-link-for-gospel-library.wflow"/><span>Download convert link workflow</span></a>
+
 
 ## Create markdown link
-
-<a class="button button-blue"><span class="fa fa-link" href="/resources/markdown-link-from-gospel-library.wflow"/><span>Markdown link</span></a>
 
 The second workflow builds on the first in some important ways. One of the most important pieces is grabbing the title and creating a formatted markdown link.
 
@@ -39,10 +37,9 @@ The markdown link looks like this:
 [Doctrine and Covenants 130:18-19](gospellibrary://content/scriptures/dc-testament/dc/130.18-19?lang=eng)
 ```
 
+<a class="button button-blue"><span class="fa fa-link" href="/resources/markdown-link-from-gospel-library.wflow"/><span>Download markdown link workflow</span></a>
 
 ## Extracting the entire quote
-
-<a class="button button-blue"><span class="fa fa-quote-right" href="/resources/markdown-quote-from-gospel-library.wflow"/><span>Markdown quote</span></a>
 
 The final piece is getting out the actual text of the quote. This last workflow uses the previous two in order to capture a formatted markdown quote. The output looks like this:
 
@@ -53,3 +50,5 @@ The final piece is getting out the actual text of the quote. This last workflow 
 > 
 > [Doctrine and Covenants 130:18-19](gospellibrary://content/scriptures/dc-testament/dc/130.18-19?lang=eng)
 ```
+
+<a class="button button-blue"><span class="fa fa-quote-right" href="/resources/markdown-quote-from-gospel-library.wflow"/><span>Download markdown quote workflow</span></a>
