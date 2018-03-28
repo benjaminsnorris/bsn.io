@@ -1,8 +1,8 @@
 ---
 title:          Align
 date:           2016-12-19
-release_date:   2014-12-19
-update_date:    2016-09-07
+release_date:   2016-12-19
+update_date:    2018-03-28
 external_link:  http://www.aligntool.com
 store_link:     https://itunes.apple.com/app/id1106211043
 categories:     professional
@@ -17,7 +17,7 @@ In January 2016, I was brought on the team as the sole iOS developer, along with
 On April 19, we started work on the [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) of Align with a new design, and a new approach. Our backend developer moved to a different team, and instead of replacing him, we decided to hire an additional frontend web developer and use [Firebase](https://firebase.google.com) as our backend. We continued to iterate and build new features, and released version 1.0 to the [App Store](https://itunes.apple.com/app/id1106211043) on September 7, 2016, as well as launched our web app at [aligntool.com](https://aligntool.com).
 
 ## My role
-As the sole iOS developer, it was naturally my responsibility to build the iOS app. Although a sole developer on my team, I have four other iOS developers on different product teams in O.C. Tanner that are on the mobile team with me. All of our code goes through pull requests and code reviews, to ensure that we are adhering to our style guide. I have worked to get our code building in continuous integration using [Jenkins](https://jenkins.io) and Fastlane(https://fastlane.tools). On every commit that is pushed to GitHub, all unit and UI tests are run, and on every commit to `master`, which usually occurs via PR, a build is submitted to iTunes Connect for distribution through TestFlight.
+As the sole iOS developer, it was naturally my responsibility to build the iOS app. Although a sole developer on my team, I have four other iOS developers on different product teams in O.C. Tanner that are on the mobile team with me. All of our code goes through pull requests and code reviews, to ensure that we are adhering to our style guide. I have worked to get our code building in continuous integration using [Jenkins](https://jenkins.io) and [Fastlane](https://fastlane.tools). On every commit that is pushed to GitHub, all unit and UI tests are run, and on every commit to `master`, which usually occurs via PR, a build is submitted to iTunes Connect for distribution through TestFlight.
 
 Due to my previous experience as a UX Designer, I often work closely with our product manager and product designer to help refine the user experience of the app. Usually my main focus in this regard is to help make sure that our app is a good platform citizen, while still retaining a unique and distinctive personality.
 

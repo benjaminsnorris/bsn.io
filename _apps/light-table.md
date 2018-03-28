@@ -1,10 +1,11 @@
 ---
 title:          Light Table
-date:           2016-06-15
+date:           2017-12-22
 release_date:   2016-09-13
-store_link:     https://a.bsn.io/light-table-app
+update_date:    2017-12-22
+store_link:     https://bsn.design/download/light-table
 categories:     personal
-summary:        Transform your device into a powerful light table.
+summary:        Trace and draw anywhere.
 ---
 
 🚧 _More info coming soon…_

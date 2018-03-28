@@ -3,8 +3,8 @@ title:          Pointedly
 date:           2016-12-20
 release_date:   2014-12-09
 update_date:    2016-12-20
-external_link:  http://bsn.design/pointedly
-store_link:     https://a.bsn.io/pointedly
+external_link:  https://bsn.design/pointedly
+store_link:     https://bsn.design/download/pointedly
 categories:     personal
 summary:        Keep score.
 ---
