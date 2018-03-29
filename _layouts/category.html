@@ -11,13 +11,13 @@ layout: default
   <div class="posts">
     {% if page.type == "tag" %}
       {% assign posts = site.tags[page.tag] %}
-      <p class="post-meta h3">{{ site.tags[page.tag].size }} posts</p>
+        <p class="post-meta h3">{{ posts.size }} post{% if posts.size > 1 %}s{% endif %}</p>
       {% if site.categories[page.tag].size > 0 %}
         <a href="/categories/{{ page.tag }}">View {{ page.tag }} category</a>
       {% endif %}
     {% else %}
       {% assign posts = site.categories[page.category] %}
-    	<p class="post-meta h3">{{ site.categories[page.category].size }} posts</p>
+    	<p class="post-meta h3">{{ posts.size }} post{% if posts.size > 1 %}s{% endif %}</p>
       {% if site.tags[page.category].size > 0 %}
         <a href="/tags/{{ page.category }}">View {{ page.category }} tag</a>
       {% endif %}

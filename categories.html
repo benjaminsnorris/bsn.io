@@ -33,7 +33,7 @@ permalink: /categories/
       	"/categories/{{ category }}"
 			{% endif %}
 			 class="post-link"><h3 class="post-title">{{ category }}</h3></a>
-			<p class="post-meta h5">{{ site.categories[category].size }} posts</p>
+			<p class="post-meta h5">{{ site.categories[category].size }} post{% if site.categories[category].size > 1 %}s{% endif %}</p>
     </div>
   {% endfor %}
 </div>

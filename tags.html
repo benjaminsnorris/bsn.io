@@ -27,7 +27,7 @@ permalink: /tags/
   {% for tag in tags %}
     <div class="post py2">
 			<a href="/tags/{{ tag }}" class="post-link"><h3 class="post-title">{{ tag }}</h3></a>
-			<p class="post-meta h5">{{ site.tags[tag].size }} posts</p>
+			<p class="post-meta h5">{{ site.tags[tag].size }} post{% if site.tags[tag].size > 1 %}s{% endif %}</p>
     </div>
   {% endfor %}
 </div>
