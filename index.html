@@ -27,7 +27,9 @@ layout:       default
                 <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
               {% endfor %}
               {% for tag in post.tags %}
-                <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% unless post.categories contains tag %}
+                  <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% endunless %}
               {% endfor %}
             </div>
           </div>
@@ -48,7 +50,9 @@ layout:       default
                 <a href="/categories/{{ category }}" class="category">{{ category }}</a>
               {% endfor %}
               {% for tag in post.tags %}
-                <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% unless post.categories contains tag %}
+                  <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% endunless %}
               {% endfor %}
             </div>
             {% endif %}
