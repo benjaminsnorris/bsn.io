@@ -3,6 +3,7 @@ title: Crucial Conversations Sketchnotes
 summary: A major step in my path to a black belt in Crucial Conversations
 categories: sketchnotes book
 minutes: 5
+date: 2018-03-29 10:58:18-0600
 ---
 
 One of my favorite books is [Crucial Conversations](https://amzn.to/2E4AOAg). I have read it countless times, but regularly find myself violating some of its principles. I knew that I would remember better if I captured sketchnotes of the book, and wanted to share them.
