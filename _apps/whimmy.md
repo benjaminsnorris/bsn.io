@@ -8,4 +8,4 @@ categories:     collaborative
 summary:        Invites with a fuse. Connect with the people who matter most.
 ---
 
-🚧 _More info coming soon…_
+One of my good friends is a designer and entrepreneur, and he had the idea to build an app to encourage people to get together in person more often and more easily. This was the first app that I built, and the custom UI that we developed was exciting and challenging to implement.

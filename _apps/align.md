@@ -1,6 +1,6 @@
 ---
 title:          Align
-date:           2016-12-19
+date:           2018-03-28
 release_date:   2016-12-19
 update_date:    2018-03-28
 external_link:  http://www.aligntool.com
