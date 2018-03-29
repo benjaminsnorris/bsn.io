@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Testing
-category: testing
+parent: Tags
+type: tag
+tag: testing
 ---

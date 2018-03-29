@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Work Reading
-category: workreading
+parent: Tags
+type: tag
+tag: workreading
 ---

@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Drawing
-category: drawing
+parent: Tags
+type: tag
+tag: drawing
 ---

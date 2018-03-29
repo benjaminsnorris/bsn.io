@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Learning
-category: learning
+parent: Tags
+type: tag
+tag: learning
 ---

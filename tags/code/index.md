@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Code
-category: code
+parent: Tags
+type: tag
+tag: code
 ---

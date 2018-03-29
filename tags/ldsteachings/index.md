@@ -1,5 +1,7 @@
 ---
 layout: category
 title: LDS Teachings
-category: ldsteachings
+parent: Tags
+type: tag
+tag: ldsteachings
 ---

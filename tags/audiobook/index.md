@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Audiobook
-category: audiobook
+parent: Tags
+type: tag
+tag: audiobook
 ---

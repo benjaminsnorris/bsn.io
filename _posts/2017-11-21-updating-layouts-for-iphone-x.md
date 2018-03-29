@@ -1,7 +1,8 @@
 ---
 title: Updating layouts for iPhone X
 summary: An ongoing summary of lessons learned from updating designs for the iPhone X
-categories: reference code
+category: reference
+tags: code
 date: 2017-11-21 11:35:01-0700
 ---
 

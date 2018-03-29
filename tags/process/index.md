@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Process
-category: process
+parent: Tags
+type: tag
+tag: process
 ---

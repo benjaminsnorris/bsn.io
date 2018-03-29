@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Nightly Reading
-category: nightlyreading
+parent: Tags
+type: tag
+tag: nightlyreading
 ---
