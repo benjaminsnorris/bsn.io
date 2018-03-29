@@ -2,7 +2,7 @@
 
 title: Silicon Slopes 2018 Sketchnotes
 summary: Sketchnotes from the Silicon Slopes 2018 Tech Summit
-categories: sketchnotes
+category: sketchnotes
 minutes: 15
 
 date: 2018-01-24 10:39:50-0700

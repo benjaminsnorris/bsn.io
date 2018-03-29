@@ -5,7 +5,7 @@ release_date:   2016-06-01
 update_date:    2017-10-19
 external_link:  https://github.com/benjaminsnorris/AvatarView
 repo_path:      benjaminsnorris/AvatarView
-categories:     personal
+category:       personal
 ---
 
 This library started from a common need to display avatars to represent people in different apps. Usually, there is an image for the person, and if not, initials should be shown instead. As this has been used in different apps, it has grown to include additional custom views:

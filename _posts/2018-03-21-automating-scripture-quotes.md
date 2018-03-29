@@ -1,7 +1,7 @@
 ---
 title: Automating Scripture Quotes
 summary: Using Workflow to extract markdown quotes of scriptures
-categories: reference
+category: reference
 tags: workflow
 date: 2018-03-21 16:02:05-0600
 ---

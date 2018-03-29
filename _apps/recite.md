@@ -5,7 +5,7 @@ release_date:   2016-04-13
 update_date:    2016-06-10
 external_link:  https://bsn.design/recite
 store_link:     https://bsn.design/download/recite
-categories:     personal
+category:       personal
 summary:        Memorize anything.
 ---
 

@@ -5,7 +5,7 @@ release_date:   2016-06-23
 update_date:    2017-10-23
 external_link:  https://github.com/benjaminsnorris/SharedHelpers
 repo_path:      benjaminsnorris/SharedHelpers
-categories:     personal
+category:       personal
 ---
 
 This has become my dumping ground for all helpful additions and extensions that I want to be able to reuse in all of my apps. Generally, if I find something that I was to share between my apps, and it does not make sense as a library by itself, I include it here.

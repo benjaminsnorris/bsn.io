@@ -1,7 +1,7 @@
 ---
 title: Riding the wave
 summary: Embracing the effects of a phasic personality
-categories: musings
+category: musings
 date: 2017-11-10 08:29:37-0700
 ---
 

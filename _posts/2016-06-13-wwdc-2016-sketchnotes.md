@@ -2,7 +2,7 @@
 title:          WWDC 2016 Sketchnotes
 date:           2016-06-13 17:30:00-0700
 summary:        A summary of my sketchnotes from the keynote and state of the union.
-categories:     sketchnotes
+category:       sketchnotes
 minutes:        10
 ---
 

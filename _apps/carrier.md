@@ -1,7 +1,7 @@
 ---
 title:          Carrier
 date:           2018-05-01
-categories:     personal
+category:       personal
 summary:        Messages on delay.
 ---
 

@@ -5,7 +5,7 @@ release_date:   2016-12-19
 update_date:    2018-03-28
 external_link:  http://www.aligntool.com
 store_link:     https://itunes.apple.com/app/id1106211043
-categories:     professional
+category:       professional
 summary:        Simple and powerful one-on-one tool for managers.
 ---
 

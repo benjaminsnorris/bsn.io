@@ -1,5 +1,7 @@
 ---
 layout: category
 title: Inktober
-category: inktober
+parent: Tags
+type: tag
+tag: inktober
 ---

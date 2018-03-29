@@ -19,7 +19,7 @@ layout: default
 
 {% if page.external_link %}
   <div class="post-external-links">
-   {% if page.external_link and page.categories contains 'book' %}
+   {% if page.external_link and page.tags contains 'book' %}
      <a href="{{ page.external_link }}" class="button button-blue"><span class="fa fa-amazon"></span><span class="title">View on Amazon</span></a>
     {% endif %}
   </div>
