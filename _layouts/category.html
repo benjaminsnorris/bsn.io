@@ -9,7 +9,11 @@ layout: default
   {{ content }}
   </div>
   <div class="posts">
-    {% if page.type == "tag" %}
+    {% if page.type == "app" %}
+      {% assign posts = site.apps | sort: 'date' | reverse %}
+    {% elsif page.type == "source" %}
+      {% assign posts = site.sources | sort: 'date' | reverse %}
+    {% elsif page.type == "tag" %}
       {% assign posts = site.tags[page.tag] %}
         <p class="post-meta h3">{{ posts.size }} post{% if posts.size > 1 %}s{% endif %}</p>
       {% if site.categories[page.tag].size > 0 %}
@@ -23,50 +27,52 @@ layout: default
       {% endif %}
     {% endif %}
     {% for post in posts %}
-      {% if post.categories contains "microblog" %}
-        <div class="post py2 microblog">
-          <p class="post-title">{{ post.content }}</p>
-          <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
-          <div class="post-meta">
-            {% for category in post.categories %}
-              {% unless category == page.category or category == page.tag %}
-                <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
-              {% endunless %}
-            {% endfor %}
-            {% for tag in post.tags %}
-              {% unless post.categories contains tag or tag == page.tag %}
-                <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
-              {% endunless %}
-            {% endfor %}
-            {% if post.external_link %}
-              <span class="social-icons"><a class="fa fa-external-link" href="{{ post.external_link }}" target="_blank"></a></span>
-            {% endif %}
+      {% if page.type == "tag" or post.category == page.category %}
+        {% if post.categories contains "microblog" %}
+          <div class="post py2 microblog">
+            <p class="post-title">{{ post.content }}</p>
+            <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
+            <div class="post-meta">
+              {% for category in post.categories %}
+                {% unless category == page.category or category == page.tag %}
+                  <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
+                {% endunless %}
+              {% endfor %}
+              {% for tag in post.tags %}
+                {% unless post.categories contains tag or tag == page.tag %}
+                  <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% endunless %}
+              {% endfor %}
+              {% if post.external_link %}
+                <span class="social-icons"><a class="fa fa-external-link" href="{{ post.external_link }}" target="_blank"></a></span>
+              {% endif %}
+            </div>
           </div>
-        </div>
-      {% else %}
-        <div class="post py2">
-          <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
-          <div class="post-meta">
-            {% for category in post.categories %}
-              {% unless category == page.category or category == page.tag %}
-                <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
-              {% endunless %}
-            {% endfor %}
-            {% for tag in post.tags %}
-              {% unless post.categories contains tag or tag == page.tag %}
-                <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
-              {% endunless %}
-            {% endfor %}
+        {% else %}
+          <div class="post py2">
+            <p class="post-meta h5">{{ post.date | date: site.date_format }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+              {% if post.summary %}
+                {{ post.summary }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
+            </p>
+            <div class="post-meta">
+              {% for category in post.categories %}
+                {% unless category == page.category or category == page.tag %}
+                  <a href="{% if category != 'microblog' %}/categories{% endif %}/{{ category }}" class="category">{{ category }}</a>
+                {% endunless %}
+              {% endfor %}
+              {% for tag in post.tags %}
+                {% unless post.categories contains tag or tag == page.tag %}
+                  <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+                {% endunless %}
+              {% endfor %}
+            </div>
           </div>
-        </div>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
