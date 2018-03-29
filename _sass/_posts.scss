@@ -91,7 +91,8 @@ span.post-meta {
   margin-left: .5rem;
 }
 
-.post-meta .category {
+.post-meta .category,
+.post-meta .tag {
     display: inline-block;
     margin-right: .25rem;
     background-color: $category-background;
@@ -101,9 +102,16 @@ span.post-meta {
     vertical-align: text-bottom;
 }
 
+.post-meta .tag .fa {
+  margin-right: .25rem;
+}
+
 .post-meta .category:hover,
 .post-meta .category:focus,
-.post-meta .category:active {
+.post-meta .category:active,
+.post-meta .tag:hover,
+.post-meta .tag:focus,
+.post-meta .tag:active {
   color: $text;
   text-decoration: none;
   background-color: $button-blue;
