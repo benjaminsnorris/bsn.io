@@ -83,11 +83,11 @@ layout: default
 
 {% if site.show_related_posts %}
   {% if page.collection == "apps" %}
-    {% assign all_posts = (site.apps | sort: 'date') | reverse %}
+    {% assign all_posts = site.apps | sort: 'date' | reverse %}
   {% elsif page.collection == "sources" %}
-    {% assign all_posts = (site.sources | sort: 'date') | reverse %}
+    {% assign all_posts = site.sources | sort: 'date' | reverse %}
   {% else %}
-    {% assign all_posts = (site.posts | sort: 'date') | reverse %}
+    {% assign all_posts = site.posts | sort: 'date' | reverse %}
   {% endif %}
   {% assign related_ids = "|" %}
   {% for post in all_posts %}

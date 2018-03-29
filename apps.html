@@ -8,7 +8,7 @@ tags:         coding
 <p>These are some of the apps that I have created or worked on.</p>
 
 <div class="posts">
-  {% assign sorted = (site.apps | sort: 'date') | reverse %}
+  {% assign sorted = site.apps | sort: 'date' | reverse %}
   {% for app in sorted %}
     <div class="post py2">
       <p class="post-meta h5">{{ app.date | date: site.date_format }}</p>

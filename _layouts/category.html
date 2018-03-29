@@ -10,12 +10,12 @@ layout: default
   </div>
   <div class="posts">
     {% if page.type == "app" %}
-      {% assign posts = (site.apps | sort: 'date') | reverse %}
+      {% assign posts = site.apps | sort: 'date' | reverse %}
     {% elsif page.type == "source" %}
-      {% assign posts = (site.sources | sort: 'date') | reverse %}
+      {% assign posts = site.sources | sort: 'date' | reverse %}
     {% else %}
-      {% assign posts = site.categories.[page.category] %}
-      	<p class="post-meta h3">{{ site.categories.[page.category].size }} posts</p>
+      {% assign posts = site.categories[page.category] %}
+      	<p class="post-meta h3">{{ site.categories[page.category].size }} posts</p>
     {% endif %}
     {% for post in posts %}
       {% if post.categories contains page.category %}
