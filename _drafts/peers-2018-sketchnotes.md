@@ -29,7 +29,7 @@ _Charles Perry—Brute-Forcing Customer Acquisition with Cold Email_
 _Natalie & Anthony Armendariz, Jamie (& Ian) Landsman, Natalie & Chris Nagele—Partnership Panel: Making Marriage and Business Work_
 
 ![peers-2018-sketchnote-07](http://bsn.io/images/sketchnotes/peers-2018/peers-2018-sketchnote-07.jpg)
-_Joe Rinaldi—Business a Reliable Business Development Process_
+_Joe Rinaldi—Building a Reliable Business Development Process_
 
 ![peers-2018-sketchnote-08](http://bsn.io/images/sketchnotes/peers-2018/peers-2018-sketchnote-08.jpg)
 _Eryn O'Neil—So You're the Tech Lead? Now What?_
