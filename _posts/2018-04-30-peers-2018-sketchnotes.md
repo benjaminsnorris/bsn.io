@@ -4,7 +4,7 @@ summary: Sketchnotes from the 2018 Peers Conference
 category: sketchnotes
 tags: sketchnotes
 minutes: 12
-date: 2018-04-30 11:09:49-0600
+date: 2018-04-30 11:38:55-0600
 ---
 
 Our iOS team had the opportunity to attend Peers Conference for the first time this year, and had a fantastic experience. I plan on writing more about our experience and my thoughts, but I first wanted to post the sketchnotes that I took.
