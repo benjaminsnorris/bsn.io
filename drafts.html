@@ -14,10 +14,10 @@ meta_robots:  noindex
       <p class="post-meta h5">{{ draft.date | date: site.date_format }}</p>
       <a href="{{ draft.url }}" class="post-link"><h3 class="post-title">{{ draft.title }}</h3></a>
       <p class="post-summary">
-        {% if post.summary %}
-          {{ post.summary }}
+        {% if draft.summary %}
+          {{ draft.summary }}
         {% else %}
-          {{ post.excerpt }}
+          {{ draft.excerpt }}
         {% endif %}
       </p>
       {% if draft.categories.size > 0 %}
