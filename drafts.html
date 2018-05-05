@@ -10,7 +10,7 @@ meta_robots:  noindex
 <div class="posts">
   {% assign sorted = site.drafts | sort: 'date' | reverse %}
   {% for draft in sorted %}
-    <div class="post py2">
+    <div class="post py2 {% if draft.title=='Moving this site' %}featured{% endif %}">
       <p class="post-meta h5">{{ draft.date | date: site.date_format }}</p>
       <a href="{{ draft.url }}" class="post-link"><h3 class="post-title">{{ draft.title }}</h3></a>
       <p class="post-summary">
