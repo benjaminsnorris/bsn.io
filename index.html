@@ -6,17 +6,6 @@ layout:       default
 <div class="home">
   {% if posts_count > 0 %}
     <div class="posts">
-      {% for post in site.posts %}
-        {% unless post.categories contains "microblog" %}
-          {% assign featured_post = post %}
-            <div class="post py2 featured">
-              <p class="post-feature-title">Latest Blog Post</p>
-              <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-              <a href="{{ post.url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-            </div>
-          {% break %}
-        {% endunless %}
-      {% endfor %}
       {% for post in paginator.posts %}
         {% if post.categories contains "microblog" %}
           <div class="post py2 microblog">
