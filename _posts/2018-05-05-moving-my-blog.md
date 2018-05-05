@@ -18,8 +18,8 @@ I have instead gone all in on [Micro.blog](https://micro.blog). I have long post
 
 **Micro.blog handles:**
 - [@bsndesign](https://micro.blog/bsndesign): my main social network account
-- [@sketchnotable](https://micro.blog/sketchnotable): a feed soley for business-related sketchnotes
-- [@mormonsketcher](https://micro.blog/mormonsketcher): a feed soley for religious sketchnotes
+- [@sketchnotable](https://micro.blog/sketchnotable): a feed solely for business-related sketchnotes
+- [@mormonsketcher](https://micro.blog/mormonsketcher): a feed solely for religious sketchnotes
 
 My content will be cross-posted to Twitter with matching usernames, so if people prefer to find or engage with content there, I will continue to have a presence. But moving forward, I will be posting everything to one of my own sites first. Each of my sites has a JSON/RSS feed where you can subscribe if you want. Hopefully this makes it easy for people to choose the content that interests them most and follow or engage it with it easily.
 
