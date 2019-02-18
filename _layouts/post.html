@@ -26,11 +26,11 @@ layout: default
         {% assign category_path = "libraries" %}
       {% endif %}
     {% for category in page.categories %}
-      <a href="/{{ category_path }}/{{ category }}" class="category">{{ category }}</a>
+      <a href="{{ site.baseurl }}/{{ category_path }}/{{ category }}" class="category">{{ category }}</a>
     {% endfor %}
     {% for tag in page.tags %}
       {% unless page.categories contains tag %}
-        <a href="/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
+        <a href="{{ site.baseurl }}/tags/{{ tag }}" class="tag"><span class="fa fa-tag"></span><span>{{ tag }}</span></a>
       {% endunless %}
     {% endfor %}
     </div>
