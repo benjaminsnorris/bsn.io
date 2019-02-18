@@ -1,8 +1,8 @@
 <div class="pagination clearfix mb1 mt3">
   {% if page.previous %}
-    <a class="left" href="{{ page.previous.url }}">⬅︎ {% if page.previous.categories contains 'microblog' %}{{ site.text.pagination.older }}{% else %}{{ page.previous.title }}{% endif %}</a>
+    <a class="left" href="{{ page.previous.url | prepend: site.baseurl }}">⬅︎ {% if page.previous.categories contains 'microblog' %}{{ site.text.pagination.older }}{% else %}{{ page.previous.title }}{% endif %}</a>
   {% endif %}
   {% if page.next %}
-    <a class="right" href="{{ page.next.url }}">{% if page.next.categories contains 'microblog' %}{{ site.text.pagination.newer }}{% else %}{{ page.next.title }}{% endif %} ➡︎</a>
+    <a class="right" href="{{ page.next.url | prepend: site.baseurl }}">{% if page.next.categories contains 'microblog' %}{{ site.text.pagination.newer }}{% else %}{{ page.next.title }}{% endif %} ➡︎</a>
   {% endif %}
 </div>
