@@ -12,7 +12,7 @@ meta_robots:  noindex
   {% for draft in sorted %}
     <div class="post py2">
       <p class="post-meta h5">{{ draft.date | date: site.date_format }}</p>
-      <a href="{{ draft.url }}" class="post-link"><h3 class="post-title">{{ draft.title }}</h3></a>
+      <a href="{{ draft.url | prepend: site.baseurl }}" class="post-link"><h3 class="post-title">{{ draft.title }}</h3></a>
       <p class="post-summary">
         {% if draft.summary %}
           {{ draft.summary }}
@@ -23,7 +23,7 @@ meta_robots:  noindex
       {% if draft.categories.size > 0 %}
         <span class="post-meta small">
           {% for category in draft.categories %}
-            <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+            <a href="{{ site.baseurl }}/categories/{{ category }}" class="category">{{ category }}</a>
           {% endfor %}
         </span>
       {% endif %}
