@@ -20,11 +20,11 @@ tags:         writing
         {% if related_ids contains post.id %}
           <div class="post py2 microblog">
             <p class="post-title">{{ post.content }}</p>
-            <a href="{{ post.url }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
+            <a href="{{ post.url | prepend: site.baseurl }}"><p class="h5">➞ {{ post.date | date: site.date_time }}</p></a>
             <div class="post-meta">
               {% for category in post.categories %}
                 {% if category != 'microblog' %}
-                  <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+                  <a href="{{ site.baseurl }}/categories/{{ category }}" class="category">{{ category }}</a>
                 {% endif %}
               {% endfor %}
             </div>
@@ -32,7 +32,7 @@ tags:         writing
         {% endif %}
       {% endfor %}
       <div class="post py1">
-        <a href="/microblog-archive" class="button button-blue">Microblog archive »</a>
+        <a href="{{ site.baseurl }}/microblog-archive" class="button button-blue">Microblog archive »</a>
       </div>
     </div>
   </div>
