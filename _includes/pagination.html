@@ -1,6 +1,6 @@
 <div class="pagination clearfix mb1 mt4">
   {% if paginator.next_page %}
-    <a class="pagination-item left" href="{{ paginator.next_page_path }}">⬅︎  {{ site.text.pagination.older }}</a>
+    <a class="pagination-item left" href="{{ paginator.next_page_path | prepend: site.baseurl }}">⬅︎  {{ site.text.pagination.older }}</a>
   {% else %}
     <span class="pagination-item disabled left">⬅︎  {{ site.text.pagination.older }}</span>
   {% endif %}
@@ -8,7 +8,7 @@
     {% if paginator.page == 2 %}
       <a class="pagination-item right" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}  ➡︎</a>
     {% else %}
-      <a class="pagination-item right" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}  ➡︎</a>
+      <a class="pagination-item right" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">{{ site.text.pagination.newer }}  ➡︎</a>
     {% endif %}
   {% else %}
     <span class="pagination-item disabled right">{{ site.text.pagination.newer }}  ➡︎</span>
