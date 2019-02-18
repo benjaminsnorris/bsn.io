@@ -26,11 +26,11 @@ permalink: /categories/
 <div class="posts">
   {% for category in categories %}
     <div class="post py2">
-			<a href="{{ site.baseurl }}"
+			<a href=
 			{% if category == 'microblog' %}
-				"/microblog"
+				"{{ site.baseurl }}/microblog"
 			{% else %}
-      	"/categories/{{ category }}"
+      	"{{ site.baseurl }}/categories/{{ category }}"
 			{% endif %}
 			 class="post-link"><h3 class="post-title">{{ category }}</h3></a>
 			<p class="post-meta h5">{{ site.categories[category].size }} post{% if site.categories[category].size > 1 %}s{% endif %}</p>
