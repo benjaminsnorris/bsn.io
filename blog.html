@@ -31,7 +31,7 @@ tags:         writing
             {% if post.categories.size > 0 %}
             <div class="post-meta">
               {% for category in post.categories %}
-              <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+              <a href="{{ site.baseurl }}/categories/{{ category }}" class="category">{{ category }}</a>
               {% endfor %}
             </div>
             {% endif %}
@@ -39,7 +39,7 @@ tags:         writing
         {% endif %}
       {% endfor %}
       <div class="post py1">
-        <a href="/archive" class="button button-blue">Blog archive »</a>
+        <a href="{{ site.baseurl }}/archive" class="button button-blue">Blog archive »</a>
       </div>
     </div>
   </div>
