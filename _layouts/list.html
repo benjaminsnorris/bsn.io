@@ -9,7 +9,7 @@ layout:       default
     {% for _page in site.pages %}
       {% if _page.tags contains page.type %}
         <div class="post py2">
-          <a href="{{ _page.url }}" class="post-link"><h2 class="post-title">{{ _page.title }}</h2></a>
+          <a href="{{ _page.url | prepend: site.baseurl }}" class="post-link"><h2 class="post-title">{{ _page.title }}</h2></a>
         </div>
       {% endif %}
     {% endfor %}
