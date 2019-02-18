@@ -5,19 +5,19 @@ permalink: /microblog-archive/
 ---
 
 <div class="mb3">
-  <a href="/archive/">View Blog Archive</a>
+  <a href="{{ site.baseurl }}/archive/">View Blog Archive</a>
 </div>
 <div class="posts archive">
   {% for post in site.posts %}
     {% if post.categories contains "microblog" %}
       <div class="post py2">
           {{ post.content }}
-          <a href="{{ post.url }}" class="h5">➞ {{ post.date | date: site.date_time }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="h5">➞ {{ post.date | date: site.date_time }}</a>
         {% if post.categories.size > 0 %}
           <span class="post-meta small">
             {% for category in post.categories %}
               {% if category != 'microblog' %}
-                <a href="/categories/{{ category }}" class="category">{{ category }}</a>
+                <a href="{{ site.baseurl }}/categories/{{ category }}" class="category">{{ category }}</a>
               {% endif %}
             {% endfor %}
           </span>
