@@ -3,8 +3,8 @@ title:       BSN Design
 email:       info@bsn.design
 author:      Ben Norris
 description: "Content produced by BSN Design, a one-man-band creating iOS apps."
-baseurl:     "/bsn.io"
-url:         "http://benjaminsnorris.github.io"
+baseurl:     "/"
+url:         "https://old-blog.bennorris.org"
 date_format: "%-d %b %Y"
 date_time:   "%-d %b %Y, %I:%M %p"
 timezone:    America/Denver
